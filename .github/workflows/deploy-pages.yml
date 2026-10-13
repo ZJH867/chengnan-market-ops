@@ -28,7 +28,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p site
-          cp index.html .nojekyll site/
+          cp -a index.html .nojekyll assets data models vendor legacy-monolith.html DEPLOY.txt site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,8695 @@
+{
+ "title": "黄框全对象 v4(办公楼分段精修)",
+ "crs": "local_EN_m(与 P2 v2 footprints 相同:原点=总区域包围盒西南角,E东N北,米)",
+ "planar_base": "P2 v2 真北 footprints.json(用户 2026-10-11 01:57 确认);本清单在其上细化,P2 区域级对象(汽车站/加油站/市场主体等)保留不改",
+ "imagery": "BASE google-earth-2026-10-08 经 northup_transform 转真北(0.1766 m/px);西南角 GE 界面遮挡处用 sat-clear(SIFT 配准)补",
+ "status_legend": {
+  "CONFIRMED": "影像清楚可见",
+  "CONFIRMED_outline_ESTIMATED_vertices": "对象确实存在,顶点为人工读图(±1–2 m)",
+  "ESTIMATED": "可见但边界/性质估计",
+  "INFERRED": "推断",
+  "UNKNOWN": "无法判定(可能为车辆/杂物等)"
+ },
+ "coverage": {
+  "generated": "2026-10-11 02:15 (UTC+8)",
+  "objects_total": 157,
+  "objects_named": 126,
+  "objects_residual_ground": 29,
+  "by_cat": {
+   "building": 59,
+   "canopy": 8,
+   "court": 8,
+   "parking": 3,
+   "ramp": 2,
+   "road": 12,
+   "shed": 20,
+   "vault": 9,
+   "yard": 34
+  },
+  "by_status": {
+   "CONFIRMED": 9,
+   "CONFIRMED_area_ESTIMATED_vertices": 1,
+   "CONFIRMED_label_ESTIMATED_outline": 1,
+   "CONFIRMED_outline_ESTIMATED_vertices": 24,
+   "CONFIRMED_presence_ESTIMATED_outline": 2,
+   "CONFIRMED_zone_ESTIMATED_vertices": 2,
+   "ESTIMATED": 73,
+   "INFERRED": 31,
+   "UNKNOWN": 12
+  },
+  "site_area_m2_raster": 45315.9,
+  "area_coverage": 0.9997,
+  "uncovered_tiny_m2": 12.9,
+  "roof_like_px_m2": 12572.5,
+  "roof_like_covered_by_roof_objects": 0.9305,
+  "roof_like_uncovered_vehicle_m2": 434.5,
+  "roof_like_uncovered_fragments_lt6m2": 439.7,
+  "uncovered_roof_blobs_ge6m2": 0,
+  "roof_like_coverage_excl_vehicles": 0.9638,
+  "v3_note": "v3 新增 SR、SRc 2 个对象(ST 轮廓延长); 原 BS_w/g/d/e1/r/e2/e3/s1 降为屋面构件"
+ },
+ "features": [
+  {
+   "id": "W01",
+   "name": "西侧蓝顶长楼(北段)主体",
+   "category": "building",
+   "roof_desc": "蓝色钢瓦双坡,屋脊南北向(E≈13)",
+   "ring_EN_m": [
+    [
+     7,
+     140
+    ],
+    [
+     20,
+     140
+    ],
+    [
+     20,
+     215
+    ],
+    [
+     7,
+     215
+    ]
+   ],
+   "area_m2": 975.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片 E7-20,N140-214 蓝顶明暗两坡",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 6.5,
+    "rise_m": 2.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "video-notes(1–2层,大跨厂棚层高大,长条楼6–8层) 蓝色钢瓦双坡,明暗两坡可见"
+   }
+  },
+  {
+   "id": "W01a",
+   "name": "西侧蓝顶长楼(北段)西侧披屋",
+   "category": "building",
+   "roof_desc": "深灰单坡",
+   "ring_EN_m": [
+    [
+     1,
+     213
+    ],
+    [
+     7,
+     213
+    ],
+    [
+     7,
+     140
+    ],
+    [
+     6.4,
+     140
+    ]
+   ],
+   "area_m2": 240.9,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 E2-7 深色带,西缘贴黄框",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 4.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "披屋"
+   }
+  },
+  {
+   "id": "W02",
+   "name": "蓝顶长楼东侧白顶附房",
+   "category": "building",
+   "roof_desc": "白/浅灰平顶",
+   "ring_EN_m": [
+    [
+     19,
+     148
+    ],
+    [
+     25,
+     148
+    ],
+    [
+     25,
+     170
+    ],
+    [
+     19,
+     170
+    ]
+   ],
+   "area_m2": 132.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W03",
+   "name": "白顶附房(北接)",
+   "category": "building",
+   "roof_desc": "白/浅灰平顶",
+   "ring_EN_m": [
+    [
+     16,
+     170
+    ],
+    [
+     22,
+     170
+    ],
+    [
+     22,
+     178
+    ],
+    [
+     16,
+     178
+    ]
+   ],
+   "area_m2": 48.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W04",
+   "name": "停车场内小白棚/白色车辆",
+   "category": "shed",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     19,
+     180
+    ],
+    [
+     23,
+     180
+    ],
+    [
+     23,
+     187
+    ],
+    [
+     19,
+     187
+    ]
+   ],
+   "area_m2": 28.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 可能是厢式车,非建筑",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W06",
+   "name": "西北蓝顶房",
+   "category": "building",
+   "roof_desc": "蓝色钢瓦",
+   "ring_EN_m": [
+    [
+     34,
+     194
+    ],
+    [
+     48,
+     194
+    ],
+    [
+     48,
+     210
+    ],
+    [
+     34,
+     210
+    ]
+   ],
+   "area_m2": 224.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 5.0,
+    "rise_m": 1.2,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "蓝色钢瓦单层厂房"
+   }
+  },
+  {
+   "id": "W07",
+   "name": "西北蓝顶房南侧浅灰附房",
+   "category": "building",
+   "roof_desc": "浅灰平顶",
+   "ring_EN_m": [
+    [
+     36,
+     189
+    ],
+    [
+     47,
+     189
+    ],
+    [
+     47,
+     194
+    ],
+    [
+     36,
+     194
+    ]
+   ],
+   "area_m2": 55.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W08",
+   "name": "蓝顶长楼南接灰色平顶楼",
+   "category": "building",
+   "roof_desc": "深灰平顶",
+   "ring_EN_m": [
+    [
+     9,
+     112
+    ],
+    [
+     26,
+     112
+    ],
+    [
+     26,
+     140
+    ],
+    [
+     6.4,
+     140
+    ]
+   ],
+   "area_m2": 512.4,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 E10-26,N112-140",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 6.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "灰色平顶,两层估"
+   }
+  },
+  {
+   "id": "W08a",
+   "name": "灰顶楼西侧粉红小屋顶",
+   "category": "shed",
+   "roof_desc": "粉红/橙",
+   "ring_EN_m": [
+    [
+     10,
+     129
+    ],
+    [
+     13,
+     129
+    ],
+    [
+     13,
+     136
+    ],
+    [
+     10,
+     136
+    ]
+   ],
+   "area_m2": 21.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W09",
+   "name": "细长白棚/围墙(南北向)",
+   "category": "shed",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     26,
+     110
+    ],
+    [
+     30,
+     110
+    ],
+    [
+     30,
+     150
+    ],
+    [
+     26,
+     150
+    ]
+   ],
+   "area_m2": 160.0,
+   "outline_status": "INFERRED",
+   "evidence": "BASE真北瓦片 细白线,可能为围墙或雨棚",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W10",
+   "name": "停车场南灰顶房",
+   "category": "building",
+   "roof_desc": "灰平顶",
+   "ring_EN_m": [
+    [
+     30,
+     124
+    ],
+    [
+     44,
+     124
+    ],
+    [
+     44,
+     133
+    ],
+    [
+     30,
+     133
+    ]
+   ],
+   "area_m2": 126.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W11",
+   "name": "西区蓝顶房(弧形楼西南)",
+   "category": "building",
+   "roof_desc": "蓝色钢瓦",
+   "ring_EN_m": [
+    [
+     34,
+     100
+    ],
+    [
+     47,
+     100
+    ],
+    [
+     47,
+     122
+    ],
+    [
+     34,
+     122
+    ]
+   ],
+   "area_m2": 286.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W11a",
+   "name": "蓝顶房西侧红顶小房",
+   "category": "shed",
+   "roof_desc": "粉红",
+   "ring_EN_m": [
+    [
+     32,
+     110
+    ],
+    [
+     35,
+     110
+    ],
+    [
+     35,
+     118
+    ],
+    [
+     32,
+     118
+    ]
+   ],
+   "area_m2": 24.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W12",
+   "name": "弧形楼南端蓝灰顶房",
+   "category": "building",
+   "roof_desc": "蓝色斜顶",
+   "ring_EN_m": [
+    [
+     48,
+     101
+    ],
+    [
+     60,
+     101
+    ],
+    [
+     60,
+     112
+    ],
+    [
+     48,
+     112
+    ]
+   ],
+   "area_m2": 132.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 ramp_zoom 蓝灰斜顶 E44-60",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W12a",
+   "name": "蓝灰顶房东侧橙色小屋顶",
+   "category": "shed",
+   "roof_desc": "橙",
+   "ring_EN_m": [
+    [
+     59,
+     103
+    ],
+    [
+     63,
+     103
+    ],
+    [
+     63,
+     108
+    ],
+    [
+     59,
+     108
+    ]
+   ],
+   "area_m2": 20.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W13",
+   "name": "白色细长雨棚(沿坡道脚道路北缘)",
+   "category": "canopy",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     37,
+     97
+    ],
+    [
+     54,
+     97.5
+    ],
+    [
+     62,
+     103
+    ],
+    [
+     61,
+     105
+    ],
+    [
+     53.5,
+     100.5
+    ],
+    [
+     37,
+     100
+    ]
+   ],
+   "area_m2": 73.5,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "雨棚 4m 估"
+   }
+  },
+  {
+   "id": "W15",
+   "name": "西侧长楼(南段)浅灰顶部分",
+   "category": "building",
+   "roof_desc": "浅蓝灰钢瓦",
+   "ring_EN_m": [
+    [
+     10,
+     110
+    ],
+    [
+     28,
+     110
+    ],
+    [
+     28,
+     79
+    ],
+    [
+     11,
+     79
+    ]
+   ],
+   "area_m2": 542.5,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片; P3 俯视色比对自修正(卫星足迹内中位 HSV 显示偏蓝)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 7.0,
+    "rise_m": 2.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "video-notes(1–2层,大跨厂棚层高大,长条楼6–8层)"
+   }
+  },
+  {
+   "id": "W16",
+   "name": "西侧蓝顶长楼(南段)蓝顶部分",
+   "category": "building",
+   "roof_desc": "深蓝钢瓦",
+   "ring_EN_m": [
+    [
+     11,
+     79
+    ],
+    [
+     34,
+     79
+    ],
+    [
+     35,
+     28
+    ],
+    [
+     16,
+     28
+    ],
+    [
+     12.5,
+     60
+    ]
+   ],
+   "area_m2": 1080.2,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片+sat-clear/m1真北(BASE 西南角被GE界面遮挡) 西缘随黄框斜",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 7.0,
+    "rise_m": 2.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "video-notes(1–2层,大跨厂棚层高大,长条楼6–8层)"
+   }
+  },
+  {
+   "id": "W17",
+   "name": "南段长楼东侧白顶附房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     28,
+     77
+    ],
+    [
+     32,
+     77
+    ],
+    [
+     32,
+     96
+    ],
+    [
+     28,
+     96
+    ]
+   ],
+   "area_m2": 76.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W18",
+   "name": "西南红顶长房",
+   "category": "building",
+   "roof_desc": "红色瓦",
+   "ring_EN_m": [
+    [
+     19,
+     3
+    ],
+    [
+     27,
+     3
+    ],
+    [
+     27,
+     28
+    ],
+    [
+     19,
+     28
+    ]
+   ],
+   "area_m2": 200.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "sat-clear/m1真北(BASE 西南角被GE界面遮挡)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 4.5,
+    "rise_m": 1.5,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "红瓦平房"
+   }
+  },
+  {
+   "id": "W19",
+   "name": "西南杂棚群",
+   "category": "shed",
+   "roof_desc": "灰/杂色",
+   "ring_EN_m": [
+    [
+     27,
+     4
+    ],
+    [
+     36,
+     4
+    ],
+    [
+     36,
+     27
+    ],
+    [
+     27,
+     27
+    ]
+   ],
+   "area_m2": 207.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "sat-clear/m1真北(BASE 西南角被GE界面遮挡) 细部不可辨,整体按一组低棚",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W20",
+   "name": "路边白色小棚",
+   "category": "shed",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     33,
+     40
+    ],
+    [
+     36,
+     40
+    ],
+    [
+     36,
+     50
+    ],
+    [
+     33,
+     50
+    ]
+   ],
+   "area_m2": 30.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W22",
+   "name": "西区白顶房(加油站北)",
+   "category": "building",
+   "roof_desc": "白平顶",
+   "ring_EN_m": [
+    [
+     41,
+     59
+    ],
+    [
+     54,
+     59
+    ],
+    [
+     54,
+     67
+    ],
+    [
+     41,
+     67
+    ]
+   ],
+   "area_m2": 104.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片+sat-clear/m1真北(BASE 西南角被GE界面遮挡)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W23",
+   "name": "橙色小棚/车辆",
+   "category": "shed",
+   "roof_desc": "橙",
+   "ring_EN_m": [
+    [
+     38,
+     66
+    ],
+    [
+     43,
+     66
+    ],
+    [
+     43,
+     75
+    ],
+    [
+     38,
+     75
+    ]
+   ],
+   "area_m2": 45.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 可能为橙色货车",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "W24",
+   "name": "西区蓝顶小房",
+   "category": "building",
+   "roof_desc": "蓝",
+   "ring_EN_m": [
+    [
+     40,
+     86
+    ],
+    [
+     50,
+     86
+    ],
+    [
+     50,
+     92
+    ],
+    [
+     40,
+     92
+    ]
+   ],
+   "area_m2": 60.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "W25",
+   "name": "西区白顶小房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     49,
+     85
+    ],
+    [
+     56,
+     85
+    ],
+    [
+     56,
+     93
+    ],
+    [
+     49,
+     93
+    ]
+   ],
+   "area_m2": 56.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "A01b",
+   "name": "弧形楼北段内排(东)",
+   "category": "building",
+   "roof_desc": "米黄/白杂顶",
+   "ring_EN_m": [
+    [
+     66.0,
+     203.95
+    ],
+    [
+     75.0,
+     203.95
+    ],
+    [
+     75.0,
+     165.0
+    ],
+    [
+     66.0,
+     165.0
+    ]
+   ],
+   "area_m2": 350.5,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 10.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "同左"
+   }
+  },
+  {
+   "id": "A03",
+   "name": "弧段内侧灰顶小房",
+   "category": "building",
+   "roof_desc": "灰/蓝灰",
+   "ring_EN_m": [
+    [
+     62.0,
+     147.0
+    ],
+    [
+     62.0,
+     136.0
+    ],
+    [
+     52.7,
+     136.0
+    ],
+    [
+     54.0,
+     138.85
+    ],
+    [
+     56.3,
+     143.85
+    ],
+    [
+     56.3,
+     143.85
+    ],
+    [
+     56.37,
+     144.01
+    ],
+    [
+     56.37,
+     144.01
+    ],
+    [
+     57.52,
+     147.0
+    ]
+   ],
+   "area_m2": 75.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "A04",
+   "name": "弧段南端灰顶小房",
+   "category": "building",
+   "roof_desc": "灰",
+   "ring_EN_m": [
+    [
+     55.0,
+     121.0
+    ],
+    [
+     55.0,
+     112.0
+    ],
+    [
+     50.87,
+     112.0
+    ],
+    [
+     51.42,
+     112.15
+    ],
+    [
+     51.43,
+     112.15
+    ],
+    [
+     51.43,
+     112.15
+    ],
+    [
+     51.44,
+     112.15
+    ],
+    [
+     51.44,
+     112.16
+    ],
+    [
+     51.44,
+     112.16
+    ],
+    [
+     51.45,
+     112.16
+    ],
+    [
+     51.45,
+     112.17
+    ],
+    [
+     51.45,
+     112.17
+    ],
+    [
+     51.45,
+     112.17
+    ],
+    [
+     51.46,
+     112.18
+    ],
+    [
+     51.46,
+     112.18
+    ],
+    [
+     51.46,
+     112.19
+    ],
+    [
+     51.46,
+     112.19
+    ],
+    [
+     51.46,
+     112.2
+    ],
+    [
+     51.46,
+     112.2
+    ],
+    [
+     51.46,
+     112.21
+    ],
+    [
+     50.3,
+     116.54
+    ],
+    [
+     49.71,
+     121.0
+    ]
+   ],
+   "area_m2": 40.9,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "RAMP_U",
+   "name": "蓝色弯道坡道(带顶,连一二层)",
+   "category": "ramp",
+   "roof_desc": "蓝色钢瓦弧形顶",
+   "ring_EN_m": [
+    [
+     88,
+     145
+    ],
+    [
+     70,
+     145.5
+    ],
+    [
+     64.5,
+     143
+    ],
+    [
+     61.5,
+     138
+    ],
+    [
+     60.5,
+     130
+    ],
+    [
+     61,
+     122
+    ],
+    [
+     63,
+     116
+    ],
+    [
+     66,
+     112.5
+    ],
+    [
+     68.5,
+     116
+    ],
+    [
+     67,
+     121
+    ],
+    [
+     66.8,
+     128
+    ],
+    [
+     67.5,
+     133
+    ],
+    [
+     70,
+     136.5
+    ],
+    [
+     88,
+     137
+    ]
+   ],
+   "area_m2": 346.9,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片 ramp_zoom 蓝色U形带;P2 ramp_blue_u 为区域级轮廓",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ramp",
+    "eave_h_m": 4.2,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "z_start": 1.2,
+    "z_end": 4.5,
+    "height_status": "ESTIMATED",
+    "height_basis": "用户:西侧蓝色弯道坡道连一二层;顶棚高出车道 4.2m 估;起止标高 ESTIMATED",
+    "ramp_form": "贴地连续缓坡实体填充,无桥洞无桥墩无栏杆(用户09)",
+    "no_rail": true
+   }
+  },
+  {
+   "id": "RAMP_OPEN",
+   "name": "坡道露天下行段(东南向接一层停车街)",
+   "category": "ramp",
+   "roof_desc": "灰色混凝土(无顶)",
+   "ring_EN_m": [
+    [
+     59.5,
+     114.5
+    ],
+    [
+     63,
+     116.5
+    ],
+    [
+     68.5,
+     116
+    ],
+    [
+     86,
+     104
+    ],
+    [
+     86,
+     98.5
+    ],
+    [
+     72,
+     105
+    ],
+    [
+     63,
+     112
+    ]
+   ],
+   "area_m2": 171.2,
+   "outline_status": "CORRECTED_v6(接 RD_join,避开 OR01)",
+   "evidence": "BASE真北瓦片 灰色斜带 E63-90,N101-118",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ramp",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "z_start": 0.0,
+    "z_end": 1.2,
+    "height_status": "N/A(地面)",
+    "height_basis": "露天下行段,接一层停车街",
+    "ramp_form": "贴地连续缓坡(下部实体填充+挡墙,无桥洞/桥墩);用户 2026-10-11 03:12 口述",
+    "no_rail": true
+   }
+  },
+  {
+   "id": "RAMP_IN",
+   "name": "坡道环内停车(原误建楼)",
+   "category": "parking",
+   "roof_desc": "地面停车",
+   "ring_EN_m": [
+    [
+     67.5,
+     118
+    ],
+    [
+     89,
+     118
+    ],
+    [
+     89,
+     132
+    ],
+    [
+     67.5,
+     132
+    ]
+   ],
+   "area_m2": 301.0,
+   "outline_status": "CORRECTED_v6(航拍04 环内停车,非楼)",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": "航拍04:U形坡道环内停放车辆"
+   }
+  },
+  {
+   "id": "RAMP_IN2",
+   "name": "坡道环内北段停车(原误建楼)",
+   "category": "parking",
+   "roof_desc": "地面停车",
+   "ring_EN_m": [
+    [
+     70,
+     132
+    ],
+    [
+     88,
+     132
+    ],
+    [
+     88,
+     136.5
+    ],
+    [
+     70,
+     136.5
+    ]
+   ],
+   "area_m2": 81.0,
+   "outline_status": "CORRECTED_v6(航拍04 环内停车,非楼)",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": "航拍04:U形坡道环内停放车辆"
+   }
+  },
+  {
+   "id": "OR01",
+   "name": "弯道东南橙顶/罐区(收缩让路)",
+   "category": "shed",
+   "roof_desc": "红橙色(圆形/小坡顶)",
+   "ring_EN_m": [
+    [
+     90,
+     99
+    ],
+    [
+     97,
+     99
+    ],
+    [
+     97,
+     108
+    ],
+    [
+     90,
+     108
+    ]
+   ],
+   "area_m2": 63.0,
+   "outline_status": "CORRECTED_v6(收缩,让出坡底道路)",
+   "evidence": "BASE真北瓦片 多个橙色小顶,可能为伞棚,按一组",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "卫星橙顶/罐群;原矩形挡住坡底出口,收缩到 SE 角"
+   }
+  },
+  {
+   "id": "B92",
+   "name": "市场西端浅蓝顶楼",
+   "category": "building",
+   "roof_desc": "浅蓝钢瓦",
+   "ring_EN_m": [
+    [
+     90,
+     108
+    ],
+    [
+     100,
+     108
+    ],
+    [
+     100,
+     128
+    ],
+    [
+     90,
+     128
+    ]
+   ],
+   "area_m2": 200.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 7.5,
+    "rise_m": 1.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "浅蓝钢瓦,两层估"
+   }
+  },
+  {
+   "id": "N06",
+   "name": "北区蓝顶大棚",
+   "category": "building",
+   "roof_desc": "蓝色钢瓦+中部青绿拱顶",
+   "ring_EN_m": [
+    [
+     76,
+     150
+    ],
+    [
+     96,
+     150
+    ],
+    [
+     96,
+     215.5
+    ],
+    [
+     76,
+     215.5
+    ]
+   ],
+   "area_m2": 1310.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 7.5,
+    "rise_m": 2.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "video-notes(1–2层,大跨厂棚层高大,长条楼6–8层) 蓝色压型钢板坡顶大跨厂棚"
+   }
+  },
+  {
+   "id": "N06v",
+   "name": "蓝顶大棚青绿长条拱顶",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     85,
+     152
+    ],
+    [
+     90,
+     152
+    ],
+    [
+     90,
+     210
+    ],
+    [
+     85,
+     210
+    ]
+   ],
+   "area_m2": 290.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 9.3,
+    "rise_m": 1.4,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "厂棚屋脊上青绿采光拱"
+   }
+  },
+  {
+   "id": "SH01",
+   "name": "中央街北侧沿街小铺(米黄/粉顶)",
+   "category": "building",
+   "roof_desc": "米黄/粉色小坡顶",
+   "ring_EN_m": [
+    [
+     70,
+     141
+    ],
+    [
+     222,
+     141
+    ],
+    [
+     222,
+     146
+    ],
+    [
+     70,
+     146
+    ]
+   ],
+   "area_m2": 760.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 6.0,
+    "rise_m": 1.0,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "沿街小铺,一层+阁楼估"
+   }
+  },
+  {
+   "id": "MN",
+   "name": "市场北排主体(深色平屋面)",
+   "category": "building",
+   "roof_desc": "深灰平屋面",
+   "ring_EN_m": [
+    [
+     96,
+     146
+    ],
+    [
+     222,
+     146
+    ],
+    [
+     222,
+     182
+    ],
+    [
+     215,
+     188
+    ],
+    [
+     180,
+     190
+    ],
+    [
+     178,
+     200
+    ],
+    [
+     150,
+     200
+    ],
+    [
+     150,
+     210
+    ],
+    [
+     96,
+     213
+    ]
+   ],
+   "area_m2": 6925.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "video-notes(1–2层,大跨厂棚层高大,长条楼6–8层);01_dusk_oblique_north 斜视 深色平屋面,两层(坡道连一二层)"
+   }
+  },
+  {
+   "id": "MNv1",
+   "name": "北排青绿长条拱顶1",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     111,
+     146
+    ],
+    [
+     117,
+     146
+    ],
+    [
+     117,
+     210
+    ],
+    [
+     111,
+     210
+    ]
+   ],
+   "area_m2": 384.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MNv2",
+   "name": "北排青绿长条拱顶2",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     141,
+     146
+    ],
+    [
+     148,
+     146
+    ],
+    [
+     148,
+     210
+    ],
+    [
+     141,
+     210
+    ]
+   ],
+   "area_m2": 448.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MNv3",
+   "name": "北排青绿长条拱顶3",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     170,
+     146
+    ],
+    [
+     176,
+     146
+    ],
+    [
+     176,
+     193
+    ],
+    [
+     170,
+     193
+    ]
+   ],
+   "area_m2": 282.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MNv4",
+   "name": "北排青绿长条拱顶4",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     201,
+     146
+    ],
+    [
+     208,
+     146
+    ],
+    [
+     208,
+     172
+    ],
+    [
+     201,
+     172
+    ]
+   ],
+   "area_m2": 182.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MNc1a",
+   "name": "北排天井1北",
+   "category": "court",
+   "roof_desc": "露天(内有白/浅蓝棚)",
+   "ring_EN_m": [
+    [
+     97,
+     185
+    ],
+    [
+     107,
+     185
+    ],
+    [
+     107,
+     207
+    ],
+    [
+     97,
+     207
+    ]
+   ],
+   "area_m2": 220.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MNc1b",
+   "name": "北排天井1南",
+   "category": "court",
+   "roof_desc": "露天",
+   "ring_EN_m": [
+    [
+     97,
+     152
+    ],
+    [
+     107,
+     152
+    ],
+    [
+     107,
+     180
+    ],
+    [
+     97,
+     180
+    ]
+   ],
+   "area_m2": 280.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MNc2",
+   "name": "北排天井2",
+   "category": "court",
+   "roof_desc": "露天(内浅蓝棚)",
+   "ring_EN_m": [
+    [
+     123,
+     155
+    ],
+    [
+     137,
+     155
+    ],
+    [
+     137,
+     203
+    ],
+    [
+     123,
+     203
+    ]
+   ],
+   "area_m2": 672.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MNc3",
+   "name": "北排天井3",
+   "category": "court",
+   "roof_desc": "露天",
+   "ring_EN_m": [
+    [
+     151,
+     155
+    ],
+    [
+     163,
+     155
+    ],
+    [
+     163,
+     190
+    ],
+    [
+     151,
+     190
+    ]
+   ],
+   "area_m2": 420.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MNc4",
+   "name": "北排天井4",
+   "category": "court",
+   "roof_desc": "露天",
+   "ring_EN_m": [
+    [
+     181,
+     150
+    ],
+    [
+     196,
+     150
+    ],
+    [
+     196,
+     168
+    ],
+    [
+     181,
+     168
+    ]
+   ],
+   "area_m2": 270.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MNt1",
+   "name": "北排米黄条形铺(E107-111)",
+   "category": "building",
+   "roof_desc": "米黄",
+   "ring_EN_m": [
+    [
+     107,
+     146
+    ],
+    [
+     111,
+     146
+    ],
+    [
+     111,
+     210
+    ],
+    [
+     107,
+     210
+    ]
+   ],
+   "area_m2": 256.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.6,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "拱顶旁米黄条形屋面,略高于主屋面"
+   }
+  },
+  {
+   "id": "MNt2",
+   "name": "北排米黄条形铺(E117-122)",
+   "category": "building",
+   "roof_desc": "米黄",
+   "ring_EN_m": [
+    [
+     117,
+     146
+    ],
+    [
+     122,
+     146
+    ],
+    [
+     122,
+     210
+    ],
+    [
+     117,
+     210
+    ]
+   ],
+   "area_m2": 320.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.6,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "同上"
+   }
+  },
+  {
+   "id": "MNe1",
+   "name": "北排东端米黄楼",
+   "category": "building",
+   "roof_desc": "米黄/白",
+   "ring_EN_m": [
+    [
+     212,
+     150
+    ],
+    [
+     218,
+     150
+    ],
+    [
+     218,
+     170
+    ],
+    [
+     212,
+     170
+    ]
+   ],
+   "area_m2": 120.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "同市场主体"
+   }
+  },
+  {
+   "id": "MNe2",
+   "name": "北排东端浅色小房",
+   "category": "building",
+   "roof_desc": "浅灰",
+   "ring_EN_m": [
+    [
+     213,
+     170
+    ],
+    [
+     218,
+     170
+    ],
+    [
+     218,
+     180
+    ],
+    [
+     213,
+     180
+    ]
+   ],
+   "area_m2": 50.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "同市场主体"
+   }
+  },
+  {
+   "id": "MNr1",
+   "name": "北排屋面小构筑(蓝)",
+   "category": "shed",
+   "roof_desc": "蓝",
+   "ring_EN_m": [
+    [
+     207,
+     181
+    ],
+    [
+     212,
+     181
+    ],
+    [
+     212,
+     184
+    ],
+    [
+     207,
+     184
+    ]
+   ],
+   "area_m2": 15.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 10.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 8.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "屋面小构筑 2.5m"
+   }
+  },
+  {
+   "id": "MNr2",
+   "name": "北排东北浅灰顶小房",
+   "category": "building",
+   "roof_desc": "浅灰",
+   "ring_EN_m": [
+    [
+     148,
+     197
+    ],
+    [
+     162,
+     197
+    ],
+    [
+     162,
+     206
+    ],
+    [
+     148,
+     206
+    ]
+   ],
+   "area_m2": 126.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房"
+   }
+  },
+  {
+   "id": "MNr3",
+   "name": "北排屋面米黄小构筑",
+   "category": "shed",
+   "roof_desc": "米黄",
+   "ring_EN_m": [
+    [
+     131,
+     203
+    ],
+    [
+     142,
+     203
+    ],
+    [
+     142,
+     210
+    ],
+    [
+     131,
+     210
+    ]
+   ],
+   "area_m2": 77.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 10.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 8.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "屋面构筑"
+   }
+  },
+  {
+   "id": "LC",
+   "name": "市场中央东西向带顶街(二层车行街)",
+   "category": "canopy",
+   "roof_desc": "白/浅蓝筒拱顶",
+   "ring_EN_m": [
+    [
+     95,
+     131
+    ],
+    [
+     219,
+     131
+    ],
+    [
+     219,
+     141
+    ],
+    [
+     95,
+     141
+    ]
+   ],
+   "area_m2": 1240.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片 白色长顶;E02 二楼大门在其东端",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.5,
+    "rise_m": 1.6,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "deck": 4.5,
+    "height_status": "ESTIMATED",
+    "height_basis": "二层车行街:坡道顶端标高≈4.5(一层层高估),白/浅蓝筒拱顶;01_dusk_oblique_north 斜视"
+   }
+  },
+  {
+   "id": "MS",
+   "name": "市场南排主体(深色平屋面)",
+   "category": "building",
+   "roof_desc": "深灰平屋面",
+   "ring_EN_m": [
+    [
+     96,
+     100
+    ],
+    [
+     220,
+     100
+    ],
+    [
+     220,
+     131
+    ],
+    [
+     96,
+     131
+    ]
+   ],
+   "area_m2": 3844.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "video-notes(1–2层,大跨厂棚层高大,长条楼6–8层);01_dusk_oblique_north 斜视"
+   }
+  },
+  {
+   "id": "MSv1",
+   "name": "南排青绿长条拱顶1",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     107,
+     103
+    ],
+    [
+     113,
+     103
+    ],
+    [
+     113,
+     131
+    ],
+    [
+     107,
+     131
+    ]
+   ],
+   "area_m2": 168.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MSv2",
+   "name": "南排青绿长条拱顶2",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     140,
+     103
+    ],
+    [
+     147,
+     103
+    ],
+    [
+     147,
+     131
+    ],
+    [
+     140,
+     131
+    ]
+   ],
+   "area_m2": 196.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MSv3",
+   "name": "南排青绿长条拱顶3",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     170,
+     103
+    ],
+    [
+     176,
+     103
+    ],
+    [
+     176,
+     131
+    ],
+    [
+     170,
+     131
+    ]
+   ],
+   "area_m2": 168.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MSv4",
+   "name": "南排青绿长条拱顶4",
+   "category": "vault",
+   "roof_desc": "青绿色筒拱(南北向)",
+   "ring_EN_m": [
+    [
+     200,
+     103
+    ],
+    [
+     207,
+     103
+    ],
+    [
+     207,
+     131
+    ],
+    [
+     200,
+     131
+    ]
+   ],
+   "area_m2": 196.0,
+   "outline_status": "CONFIRMED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "barrel",
+    "eave_h_m": 8.0,
+    "rise_m": 2.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "通道青绿拱顶:起拱于市场屋面高度 8m,矢高 2.2m 估"
+   }
+  },
+  {
+   "id": "MSc1",
+   "name": "南排天井1",
+   "category": "court",
+   "roof_desc": "露天",
+   "ring_EN_m": [
+    [
+     120,
+     104
+    ],
+    [
+     134,
+     104
+    ],
+    [
+     134,
+     126
+    ],
+    [
+     120,
+     126
+    ]
+   ],
+   "area_m2": 308.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MSc2",
+   "name": "南排天井2",
+   "category": "court",
+   "roof_desc": "露天",
+   "ring_EN_m": [
+    [
+     150,
+     104
+    ],
+    [
+     165,
+     104
+    ],
+    [
+     165,
+     125
+    ],
+    [
+     150,
+     125
+    ]
+   ],
+   "area_m2": 315.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MSc3",
+   "name": "南排天井3",
+   "category": "court",
+   "roof_desc": "露天",
+   "ring_EN_m": [
+    [
+     180,
+     104
+    ],
+    [
+     195,
+     104
+    ],
+    [
+     195,
+     122
+    ],
+    [
+     180,
+     122
+    ]
+   ],
+   "area_m2": 270.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "court",
+    "eave_h_m": 3.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "内院:露天,院内低棚 3.5m 估"
+   }
+  },
+  {
+   "id": "MSe1",
+   "name": "南排东端浅蓝长顶楼",
+   "category": "building",
+   "roof_desc": "浅蓝钢瓦",
+   "ring_EN_m": [
+    [
+     211,
+     100
+    ],
+    [
+     219,
+     100
+    ],
+    [
+     219,
+     127
+    ],
+    [
+     211,
+     127
+    ]
+   ],
+   "area_m2": 216.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 7.5,
+    "rise_m": 1.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "浅蓝钢瓦两层"
+   }
+  },
+  {
+   "id": "SL",
+   "name": "南排东西向露天停车街(一层街)",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     95,
+     88
+    ],
+    [
+     220,
+     88
+    ],
+    [
+     220,
+     100
+    ],
+    [
+     95,
+     100
+    ]
+   ],
+   "area_m2": 1500.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片 E01 一楼大门在其东端",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "OF",
+   "name": "办公楼(v4 分段:北段/西南段/东南段/东端门楼)",
+   "category": "building",
+   "roof_desc": "深灰平屋面",
+   "ring_EN_m": [
+    [
+     97.76,
+     84.02
+    ],
+    [
+     99.43,
+     80.17
+    ],
+    [
+     99.42,
+     64.44
+    ],
+    [
+     97.33,
+     62.81
+    ],
+    [
+     97.21,
+     60.15
+    ],
+    [
+     101.13,
+     58.46
+    ],
+    [
+     103.2,
+     60.81
+    ],
+    [
+     118.59,
+     60.62
+    ],
+    [
+     119.86,
+     58.87
+    ],
+    [
+     122.83,
+     60.17
+    ],
+    [
+     138.93,
+     59.81
+    ],
+    [
+     140.39,
+     57.54
+    ],
+    [
+     143.41,
+     57.25
+    ],
+    [
+     145.12,
+     59.77
+    ],
+    [
+     157.11,
+     60.55
+    ],
+    [
+     157.67,
+     59.15
+    ],
+    [
+     160.1,
+     61.16
+    ],
+    [
+     169.65,
+     61.36
+    ],
+    [
+     173.4,
+     59.49
+    ],
+    [
+     175.65,
+     61.84
+    ],
+    [
+     174.34,
+     64.64
+    ],
+    [
+     175.23,
+     80.92
+    ],
+    [
+     172.88,
+     83.34
+    ],
+    [
+     169.4,
+     81.15
+    ],
+    [
+     138.8,
+     81.9
+    ],
+    [
+     137.0,
+     83.63
+    ],
+    [
+     134.73,
+     82.35
+    ],
+    [
+     103.78,
+     83.27
+    ],
+    [
+     100.71,
+     86.21
+    ]
+   ],
+   "area_m2": 1690.5,
+   "outline_status": "CONFIRMED_area_ESTIMATED_vertices",
+   "evidence": "P2 office 1690.52㎡",
+   "p2_source": "office",
+   "model3d": {
+    "roof_type": "office",
+    "eave_h_m": 14.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "01_dusk_oblique_north 斜视 汽车站与市场间深色平顶多层楼(按4层估)"
+   },
+   "office_v4": [
+    {
+     "id": "OF_N",
+     "name": "办公楼北段主体(4 层)",
+     "ring_EN_m": [
+      [
+       100.71,
+       86.21
+      ],
+      [
+       103.78,
+       83.27
+      ],
+      [
+       134.73,
+       82.35
+      ],
+      [
+       137.0,
+       83.63
+      ],
+      [
+       138.8,
+       81.9
+      ],
+      [
+       169.4,
+       81.15
+      ],
+      [
+       172.88,
+       83.34
+      ],
+      [
+       175.23,
+       80.92
+      ],
+      [
+       174.69,
+       71.0
+      ],
+      [
+       99.42,
+       71.0
+      ],
+      [
+       99.43,
+       80.17
+      ],
+      [
+       97.76,
+       84.02
+      ]
+     ],
+     "area_m2": 863.9,
+     "eave_h_m": 13.2,
+     "parapet_top_m": 14.1,
+     "height_status": "ESTIMATED",
+     "height_basis": "f_0149 PnP:西端屋檐反投影 z≈12;f_0133 东端立面视高≈11.5 m+女儿墙;取 4 层×3.3 m",
+     "roof": "屋面深灰",
+     "ring_inner_0.3": [
+      [
+       100.69,
+       85.82
+      ],
+      [
+       103.66,
+       82.97
+      ],
+      [
+       134.8,
+       82.05
+      ],
+      [
+       136.95,
+       83.26
+      ],
+      [
+       138.68,
+       81.6
+      ],
+      [
+       169.48,
+       80.85
+      ],
+      [
+       172.83,
+       82.96
+      ],
+      [
+       174.92,
+       80.81
+      ],
+      [
+       174.41,
+       71.3
+      ],
+      [
+       99.72,
+       71.3
+      ],
+      [
+       99.73,
+       80.23
+      ],
+      [
+       98.13,
+       83.92
+      ]
+     ]
+    },
+    {
+     "id": "OF_SW",
+     "name": "办公楼西南段(较低, 3 层)",
+     "ring_EN_m": [
+      [
+       138.93,
+       59.81
+      ],
+      [
+       122.83,
+       60.17
+      ],
+      [
+       119.86,
+       58.87
+      ],
+      [
+       118.59,
+       60.62
+      ],
+      [
+       103.2,
+       60.81
+      ],
+      [
+       101.13,
+       58.46
+      ],
+      [
+       97.21,
+       60.15
+      ],
+      [
+       97.33,
+       62.81
+      ],
+      [
+       99.42,
+       64.44
+      ],
+      [
+       99.42,
+       71.0
+      ],
+      [
+       140.0,
+       71.0
+      ],
+      [
+       140.0,
+       58.15
+      ]
+     ],
+     "area_m2": 449.6,
+     "eave_h_m": 9.6,
+     "parapet_top_m": 10.5,
+     "height_status": "INFERRED",
+     "height_basis": "GE 屋面在 N≈71 有分界线;f_0149 PnP 南沿反投影 z≈8–9 m",
+     "roof": "屋面深灰",
+     "ring_inner_0.3": [
+      [
+       139.1,
+       60.11
+      ],
+      [
+       122.77,
+       60.47
+      ],
+      [
+       119.96,
+       59.24
+      ],
+      [
+       118.74,
+       60.92
+      ],
+      [
+       103.07,
+       61.11
+      ],
+      [
+       101.05,
+       58.82
+      ],
+      [
+       97.52,
+       60.34
+      ],
+      [
+       97.62,
+       62.66
+      ],
+      [
+       99.72,
+       64.29
+      ],
+      [
+       99.72,
+       70.7
+      ],
+      [
+       139.7,
+       70.7
+      ],
+      [
+       139.7,
+       59.17
+      ]
+     ]
+    },
+    {
+     "id": "OF_SE",
+     "name": "办公楼东南段浅灰屋面(4 层)",
+     "ring_EN_m": [
+      [
+       174.34,
+       64.64
+      ],
+      [
+       175.65,
+       61.84
+      ],
+      [
+       173.4,
+       59.49
+      ],
+      [
+       169.65,
+       61.36
+      ],
+      [
+       160.1,
+       61.16
+      ],
+      [
+       157.67,
+       59.15
+      ],
+      [
+       157.11,
+       60.55
+      ],
+      [
+       145.12,
+       59.77
+      ],
+      [
+       143.41,
+       57.25
+      ],
+      [
+       140.39,
+       57.54
+      ],
+      [
+       140.0,
+       58.15
+      ],
+      [
+       140.0,
+       71.0
+      ],
+      [
+       174.69,
+       71.0
+      ]
+     ],
+     "area_m2": 377.0,
+     "eave_h_m": 13.2,
+     "parapet_top_m": 14.1,
+     "height_status": "ESTIMATED",
+     "height_basis": "GE 浅灰屋面(原 OFg);f_0149 南沿反投影 z≈12–13 m",
+     "roof": "屋面浅灰",
+     "ring_inner_0.3": [
+      [
+       174.04,
+       64.58
+      ],
+      [
+       175.29,
+       61.9
+      ],
+      [
+       173.34,
+       59.86
+      ],
+      [
+       169.72,
+       61.66
+      ],
+      [
+       159.99,
+       61.46
+      ],
+      [
+       157.8,
+       59.64
+      ],
+      [
+       157.31,
+       60.86
+      ],
+      [
+       144.95,
+       60.06
+      ],
+      [
+       143.26,
+       57.57
+      ],
+      [
+       140.56,
+       57.82
+      ],
+      [
+       140.3,
+       58.24
+      ],
+      [
+       140.3,
+       70.7
+      ],
+      [
+       174.37,
+       70.7
+      ]
+     ]
+    },
+    {
+     "id": "OF_EB",
+     "name": "办公楼东端门楼(东立面大拱门+三连小拱女儿墙+屋顶开敞构架)",
+     "ring_EN_m": [
+      [
+       175.0,
+       64.5
+      ],
+      [
+       183.4,
+       64.5
+      ],
+      [
+       183.4,
+       80.0
+      ],
+      [
+       175.0,
+       80.0
+      ]
+     ],
+     "area_m2": 130.2,
+     "eave_h_m": 13.6,
+     "parapet_top_m": 14.2,
+     "frame_top_m": 21.5,
+     "height_status": "ESTIMATED",
+     "height_basis": "f_0133 与 f_0149 两视图三角化:东沿女儿墙 z≈14.0–14.25(间隙 0.6–1.0 m),构架顶 z≈21.75(间隙 1.1–1.7 m,误差±3 m)",
+     "outline_status": "INFERRED(位于 P2 实测轮廓以东,未计入 1691 ㎡)",
+     "roof": "屋面深灰",
+     "ring_inner_0.3": [
+      [
+       175.3,
+       64.8
+      ],
+      [
+       175.3,
+       79.7
+      ],
+      [
+       183.1,
+       79.7
+      ],
+      [
+       183.1,
+       64.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "OFr",
+   "name": "办公楼屋面红顶小构筑",
+   "category": "shed",
+   "roof_desc": "红/粉",
+   "ring_EN_m": [
+    [
+     160,
+     70
+    ],
+    [
+     167,
+     70
+    ],
+    [
+     167,
+     75
+    ],
+    [
+     160,
+     75
+    ]
+   ],
+   "area_m2": 35.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 15.6,
+    "rise_m": 1.2,
+    "ridge_dir": "EW",
+    "z0_m": 14.1,
+    "height_status": "ESTIMATED",
+    "height_basis": "v4: 位于 OF_N 屋面上的红色双坡小构筑(GE 红顶 E160–167 N70–75)"
+   }
+  },
+  {
+   "id": "OFg",
+   "name": "办公楼南段浅灰屋面",
+   "category": "building",
+   "roof_desc": "浅灰",
+   "ring_EN_m": [
+    [
+     145,
+     61
+    ],
+    [
+     174,
+     61
+    ],
+    [
+     174,
+     70
+    ],
+    [
+     145,
+     70
+    ]
+   ],
+   "area_m2": 261.0,
+   "outline_status": "INFERRED",
+   "evidence": "BASE真北瓦片 可能为较低一层",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "merged",
+    "eave_h_m": 6.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "低层部分估"
+   },
+   "v4_change": "并入 OF_SE"
+  },
+  {
+   "id": "E1",
+   "name": "办公楼东侧棕顶条楼",
+   "category": "building",
+   "roof_desc": "棕/米黄",
+   "ring_EN_m": [
+    [
+     180,
+     83
+    ],
+    [
+     215,
+     83
+    ],
+    [
+     215,
+     88
+    ],
+    [
+     180,
+     88
+    ]
+   ],
+   "area_m2": 175.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "E2",
+   "name": "办公楼东侧浅灰大屋面楼",
+   "category": "building",
+   "roof_desc": "浅蓝钢瓦双坡",
+   "ring_EN_m": [
+    [
+     183,
+     70
+    ],
+    [
+     218,
+     70
+    ],
+    [
+     218,
+     83
+    ],
+    [
+     183,
+     83
+    ]
+   ],
+   "area_m2": 455.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片; P3 俯视色比对自修正(卫星足迹内中位 HSV 显示偏蓝)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 6.0,
+    "rise_m": 1.2,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 视频 f_0147 蓝色压型钢板双坡长楼"
+   }
+  },
+  {
+   "id": "E2r",
+   "name": "浅灰楼屋面蓝色小构筑",
+   "category": "shed",
+   "roof_desc": "蓝",
+   "ring_EN_m": [
+    [
+     197,
+     81
+    ],
+    [
+     200,
+     81
+    ],
+    [
+     200,
+     85
+    ],
+    [
+     197,
+     85
+    ]
+   ],
+   "area_m2": 12.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 8.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 6.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "屋面构筑"
+   }
+  },
+  {
+   "id": "DP",
+   "name": "汽库(P2 轮廓)",
+   "category": "building",
+   "roof_desc": "灰色坡顶+蓝色局部",
+   "ring_EN_m": [
+    [
+     63.96,
+     62.97
+    ],
+    [
+     62.51,
+     89.43
+    ],
+    [
+     83.32,
+     90.77
+    ],
+    [
+     84.61,
+     63.95
+    ]
+   ],
+   "area_m2": 553.8,
+   "outline_status": "CONFIRMED_label_ESTIMATED_outline",
+   "evidence": "P2 depot",
+   "p2_source": "depot",
+   "model3d": {
+    "roof_type": "hip",
+    "eave_h_m": 6.5,
+    "rise_m": 2.0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "汽库:灰色坡屋面"
+   }
+  },
+  {
+   "id": "DPw1",
+   "name": "汽库东侧白顶小房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     85,
+     82
+    ],
+    [
+     95,
+     82
+    ],
+    [
+     95,
+     92
+    ],
+    [
+     85,
+     92
+    ]
+   ],
+   "area_m2": 100.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "DPw2",
+   "name": "汽库东南白顶小房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     89,
+     69
+    ],
+    [
+     98,
+     69
+    ],
+    [
+     98,
+     77
+    ],
+    [
+     89,
+     77
+    ]
+   ],
+   "area_m2": 72.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "G01",
+   "name": "加油站区蓝顶长房",
+   "category": "building",
+   "roof_desc": "蓝色钢瓦",
+   "ring_EN_m": [
+    [
+     42,
+     9
+    ],
+    [
+     51,
+     9
+    ],
+    [
+     51,
+     45
+    ],
+    [
+     42,
+     45
+    ]
+   ],
+   "area_m2": 324.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 5.0,
+    "rise_m": 1.2,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "蓝顶长房"
+   }
+  },
+  {
+   "id": "G02",
+   "name": "加油站区北侧白顶建筑群",
+   "category": "building",
+   "roof_desc": "白/浅灰",
+   "ring_EN_m": [
+    [
+     48,
+     37
+    ],
+    [
+     62,
+     37
+    ],
+    [
+     62,
+     55
+    ],
+    [
+     48,
+     55
+    ]
+   ],
+   "area_m2": 252.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "G03",
+   "name": "加油站区深色平顶房",
+   "category": "building",
+   "roof_desc": "深灰平顶",
+   "ring_EN_m": [
+    [
+     62,
+     40
+    ],
+    [
+     77,
+     40
+    ],
+    [
+     77,
+     55
+    ],
+    [
+     62,
+     55
+    ]
+   ],
+   "area_m2": 225.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 6.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "两层估"
+   }
+  },
+  {
+   "id": "G04",
+   "name": "加油罩棚(蓝/米条纹顶)",
+   "category": "canopy",
+   "roof_desc": "蓝米相间条纹钢瓦",
+   "ring_EN_m": [
+    [
+     60,
+     15
+    ],
+    [
+     83,
+     15
+    ],
+    [
+     83,
+     40
+    ],
+    [
+     60,
+     40
+    ]
+   ],
+   "area_m2": 575.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 6.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "加油罩棚,条纹钢瓦"
+   }
+  },
+  {
+   "id": "G05",
+   "name": "加油站南侧白顶低房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     60,
+     6
+    ],
+    [
+     82,
+     6
+    ],
+    [
+     82,
+     15
+    ],
+    [
+     60,
+     15
+    ]
+   ],
+   "area_m2": 198.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "G06",
+   "name": "加油站东侧水泥通道",
+   "category": "road",
+   "roof_desc": "浅色水泥",
+   "ring_EN_m": [
+    [
+     82,
+     8
+    ],
+    [
+     89,
+     8
+    ],
+    [
+     89,
+     58
+    ],
+    [
+     82,
+     58
+    ]
+   ],
+   "area_m2": 350.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "BS_r",
+   "name": "汽车站红顶房",
+   "category": "building",
+   "roof_desc": "红/橙色瓦",
+   "ring_EN_m": [
+    [
+     155,
+     20
+    ],
+    [
+     190,
+     20
+    ],
+    [
+     190,
+     36
+    ],
+    [
+     155,
+     36
+    ]
+   ],
+   "area_m2": 560.0,
+   "outline_status": "CONFIRMED_outline_ESTIMATED_vertices",
+   "evidence": "BASE真北瓦片 大面积橙红屋顶",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "gable",
+    "eave_h_m": 25.0,
+    "rise_m": 1.5,
+    "ridge_dir": "EW",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 南排楼屋面红色彩钢加建(双坡); 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_g",
+   "name": "汽车站灰顶房(屋面碎石)",
+   "category": "building",
+   "roof_desc": "灰色杂顶",
+   "ring_EN_m": [
+    [
+     120,
+     14.5
+    ],
+    [
+     145,
+     14.5
+    ],
+    [
+     145,
+     31
+    ],
+    [
+     120,
+     31
+    ]
+   ],
+   "area_m2": 412.5,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.4,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 南排楼屋面碎石/屋顶花园; 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_d",
+   "name": "汽车站深色平顶房",
+   "category": "building",
+   "roof_desc": "深灰平顶",
+   "ring_EN_m": [
+    [
+     145,
+     18
+    ],
+    [
+     155,
+     18
+    ],
+    [
+     155,
+     33
+    ],
+    [
+     145,
+     33
+    ]
+   ],
+   "area_m2": 150.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.6,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 南排楼屋面深色段; 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_s1",
+   "name": "汽车站站台棚1(P2)",
+   "category": "canopy",
+   "roof_desc": "P2 bus_shed_1",
+   "ring_EN_m": [
+    [
+     120.59,
+     17.38
+    ],
+    [
+     120.08,
+     24.44
+    ],
+    [
+     181.33,
+     26.29
+    ],
+    [
+     182.02,
+     19.24
+    ]
+   ],
+   "area_m2": 433.9,
+   "outline_status": "ESTIMATED",
+   "evidence": "P2 bus_shed_1",
+   "p2_source": "bus_shed_1",
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.5,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: P2 bus_shed_1 与南排楼重叠→降为屋面(UNKNOWN); 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_s2",
+   "name": "汽车站站台棚2(P2)",
+   "category": "canopy",
+   "roof_desc": "P2 bus_shed_2",
+   "ring_EN_m": [
+    [
+     124.7,
+     36.3
+    ],
+    [
+     124.2,
+     38.3
+    ],
+    [
+     175.74,
+     39.94
+    ],
+    [
+     176.41,
+     36.3
+    ]
+   ],
+   "area_m2": 346.6,
+   "outline_status": "ESTIMATED",
+   "evidence": "P2 bus_shed_2",
+   "p2_source": "bus_shed_2",
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 5.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "站台棚"
+   },
+   "v3_change": "南缘裁到 SR 北立面(N36.3)"
+  },
+  {
+   "id": "BS_e1",
+   "name": "汽车站东侧灰顶房",
+   "category": "building",
+   "roof_desc": "灰",
+   "ring_EN_m": [
+    [
+     188,
+     22
+    ],
+    [
+     205,
+     22
+    ],
+    [
+     205,
+     38
+    ],
+    [
+     188,
+     38
+    ]
+   ],
+   "area_m2": 272.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.4,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 南排楼东端屋面; 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_e2",
+   "name": "汽车站东侧蓝顶小房",
+   "category": "building",
+   "roof_desc": "蓝",
+   "ring_EN_m": [
+    [
+     206,
+     37
+    ],
+    [
+     216,
+     37
+    ],
+    [
+     216,
+     44
+    ],
+    [
+     206,
+     44
+    ]
+   ],
+   "area_m2": 70.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 27.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 西翼屋面浅蓝构筑; 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_e3",
+   "name": "汽车站东北米灰顶房",
+   "category": "building",
+   "roof_desc": "米灰",
+   "ring_EN_m": [
+    [
+     198,
+     44
+    ],
+    [
+     230,
+     44
+    ],
+    [
+     230,
+     50
+    ],
+    [
+     198,
+     50
+    ]
+   ],
+   "area_m2": 192.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.4,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 西翼屋面米灰段; 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_e4",
+   "name": "汽车站东侧红色小屋顶",
+   "category": "shed",
+   "roof_desc": "红/橙",
+   "ring_EN_m": [
+    [
+     208,
+     20
+    ],
+    [
+     213,
+     20
+    ],
+    [
+     213,
+     32
+    ],
+    [
+     208,
+     32
+    ]
+   ],
+   "area_m2": 60.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 可能为红色车辆",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "BS_e5",
+   "name": "汽车站东北白灰小房",
+   "category": "building",
+   "roof_desc": "白灰",
+   "ring_EN_m": [
+    [
+     185,
+     42
+    ],
+    [
+     195,
+     42
+    ],
+    [
+     195,
+     50
+    ],
+    [
+     185,
+     50
+    ]
+   ],
+   "area_m2": 80.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "BS_park",
+   "name": "汽车站停车坪(大巴停放)",
+   "category": "parking",
+   "roof_desc": "沥青,白色长方块为大巴",
+   "ring_EN_m": [
+    [
+     113,
+     38
+    ],
+    [
+     226,
+     38
+    ],
+    [
+     226,
+     74
+    ],
+    [
+     113,
+     74
+    ]
+   ],
+   "area_m2": 4068.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 白色长方块 3×9m 判为大巴",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "BS_yard",
+   "name": "汽车站东南硬化场地",
+   "category": "yard",
+   "roof_desc": "水泥",
+   "ring_EN_m": [
+    [
+     205,
+     13
+    ],
+    [
+     226,
+     13
+    ],
+    [
+     226,
+     36
+    ],
+    [
+     205,
+     36
+    ]
+   ],
+   "area_m2": 483.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_w1",
+   "name": "西区南北向道路(南段)",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     36.0,
+     60.0
+    ],
+    [
+     41.51,
+     60.0
+    ],
+    [
+     41.45,
+     55.0
+    ],
+    [
+     41.45,
+     55.0
+    ],
+    [
+     41.55,
+     50.0
+    ],
+    [
+     41.55,
+     49.99
+    ],
+    [
+     42.0,
+     46.4
+    ],
+    [
+     42.0,
+     3.0
+    ],
+    [
+     36.0,
+     3.0
+    ]
+   ],
+   "area_m2": 336.1,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片+sat-clear/m1真北(BASE 西南角被GE界面遮挡)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_w2",
+   "name": "西区南北向道路(北段)",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     31,
+     60
+    ],
+    [
+     38,
+     60
+    ],
+    [
+     38,
+     97
+    ],
+    [
+     31,
+     97
+    ]
+   ],
+   "area_m2": 259.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_w3",
+   "name": "弧形楼西侧南北向通道",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     43.0,
+     165.0
+    ],
+    [
+     52.0,
+     165.0
+    ],
+    [
+     52.0,
+     147.97
+    ],
+    [
+     51.27,
+     146.07
+    ],
+    [
+     49.0,
+     141.15
+    ],
+    [
+     49.0,
+     141.15
+    ],
+    [
+     49.0,
+     141.14
+    ],
+    [
+     49.0,
+     141.14
+    ],
+    [
+     45.8,
+     134.14
+    ],
+    [
+     45.8,
+     134.14
+    ],
+    [
+     45.71,
+     133.92
+    ],
+    [
+     45.71,
+     133.92
+    ],
+    [
+     45.64,
+     133.69
+    ],
+    [
+     45.64,
+     133.69
+    ],
+    [
+     44.34,
+     128.69
+    ],
+    [
+     44.34,
+     128.69
+    ],
+    [
+     44.28,
+     128.4
+    ],
+    [
+     44.28,
+     128.39
+    ],
+    [
+     44.25,
+     128.09
+    ],
+    [
+     44.25,
+     128.09
+    ],
+    [
+     44.05,
+     122.09
+    ],
+    [
+     44.05,
+     122.09
+    ],
+    [
+     44.05,
+     121.87
+    ],
+    [
+     44.05,
+     121.86
+    ],
+    [
+     44.07,
+     121.64
+    ],
+    [
+     44.07,
+     121.64
+    ],
+    [
+     44.87,
+     115.64
+    ],
+    [
+     44.87,
+     115.63
+    ],
+    [
+     44.94,
+     115.29
+    ],
+    [
+     44.94,
+     115.29
+    ],
+    [
+     45.82,
+     112.0
+    ],
+    [
+     43.0,
+     112.0
+    ]
+   ],
+   "area_m2": 272.3,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_g",
+   "name": "加油站与汽车站间南北路",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     89,
+     8
+    ],
+    [
+     97,
+     8
+    ],
+    [
+     97,
+     60
+    ],
+    [
+     89,
+     60
+    ]
+   ],
+   "area_m2": 416.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_m",
+   "name": "市场西侧通道(坡道与市场之间)",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     88,
+     128
+    ],
+    [
+     96,
+     128
+    ],
+    [
+     96,
+     150
+    ],
+    [
+     88,
+     150
+    ]
+   ],
+   "area_m2": 176.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_be",
+   "name": "临街楼背后南北向内街(P2)",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     221.34,
+     54.88
+    ],
+    [
+     218.77,
+     174.05
+    ],
+    [
+     227.07,
+     174.23
+    ],
+    [
+     229.64,
+     55.06
+    ]
+   ],
+   "area_m2": 989.6,
+   "outline_status": "CONFIRMED_zone_ESTIMATED_vertices",
+   "evidence": "P2 back_lane_e",
+   "p2_source": "back_lane_e",
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "ST",
+   "name": "临街楼(直段+南端弧形转角+西翼)",
+   "category": "building",
+   "roof_desc": "屋顶花园",
+   "ring_EN_m": [
+    [
+     243.98,
+     175.03
+    ],
+    [
+     244.61,
+     163.99
+    ],
+    [
+     244.43,
+     152.96
+    ],
+    [
+     244.24,
+     142.25
+    ],
+    [
+     244.05,
+     131.53
+    ],
+    [
+     243.87,
+     120.81
+    ],
+    [
+     243.68,
+     110.09
+    ],
+    [
+     243.5,
+     99.37
+    ],
+    [
+     243.31,
+     88.65
+    ],
+    [
+     243.12,
+     77.94
+    ],
+    [
+     242.94,
+     67.22
+    ],
+    [
+     242.3,
+     56.46
+    ],
+    [
+     242.17,
+     54.33
+    ],
+    [
+     241.78,
+     52.19
+    ],
+    [
+     241.13,
+     50.12
+    ],
+    [
+     240.24,
+     48.13
+    ],
+    [
+     239.11,
+     46.27
+    ],
+    [
+     237.77,
+     44.56
+    ],
+    [
+     236.24,
+     43.03
+    ],
+    [
+     234.53,
+     41.69
+    ],
+    [
+     232.67,
+     40.56
+    ],
+    [
+     230.68,
+     39.67
+    ],
+    [
+     228.61,
+     39.02
+    ],
+    [
+     226.47,
+     38.63
+    ],
+    [
+     224.45,
+     38.5
+    ],
+    [
+     222.3,
+     38.5
+    ],
+    [
+     217.44,
+     38.5
+    ],
+    [
+     212.58,
+     38.5
+    ],
+    [
+     207.72,
+     38.5
+    ],
+    [
+     202.86,
+     38.5
+    ],
+    [
+     198.0,
+     38.5
+    ],
+    [
+     198.0,
+     50.5
+    ],
+    [
+     202.86,
+     50.5
+    ],
+    [
+     207.72,
+     50.5
+    ],
+    [
+     212.58,
+     50.5
+    ],
+    [
+     217.44,
+     50.5
+    ],
+    [
+     222.3,
+     50.5
+    ],
+    [
+     224.15,
+     50.5
+    ],
+    [
+     225.02,
+     50.54
+    ],
+    [
+     225.74,
+     50.67
+    ],
+    [
+     226.43,
+     50.89
+    ],
+    [
+     227.09,
+     51.19
+    ],
+    [
+     227.71,
+     51.56
+    ],
+    [
+     228.28,
+     52.01
+    ],
+    [
+     228.79,
+     52.52
+    ],
+    [
+     229.24,
+     53.09
+    ],
+    [
+     229.61,
+     53.71
+    ],
+    [
+     229.91,
+     54.37
+    ],
+    [
+     230.13,
+     55.06
+    ],
+    [
+     230.26,
+     55.78
+    ],
+    [
+     230.3,
+     56.54
+    ],
+    [
+     229.66,
+     67.22
+    ],
+    [
+     229.48,
+     77.94
+    ],
+    [
+     229.29,
+     88.65
+    ],
+    [
+     229.1,
+     99.37
+    ],
+    [
+     228.92,
+     110.09
+    ],
+    [
+     228.73,
+     120.81
+    ],
+    [
+     228.55,
+     131.53
+    ],
+    [
+     228.36,
+     142.25
+    ],
+    [
+     228.17,
+     152.96
+    ],
+    [
+     227.99,
+     163.37
+    ],
+    [
+     227.02,
+     173.77
+    ]
+   ],
+   "area_m2": 2299.6,
+   "outline_status": "straight:CONFIRMED_zone_ESTIMATED_vertices; arc+wing:INFERRED",
+   "evidence": "P2 street_slab(直段 N56–174)+视频 f_0133(t=66s) PnP 相机(12 点,平均重投影 11 px)：BS_e2/BS_e3/BS_r 轮廓按 z=24 m 投影与帧中高楼屋面/侧面重合，按 z=0 不重合 → 该处为高层；临街楼南端阳台立面在帧中连续绕过转角；GE 中 N38–42 白色女儿墙弧线。转角半径/西翼长度 INFERRED",
+   "p2_source": "street_slab",
+   "model3d": {
+    "roof_type": "residential",
+    "eave_h_m": 24.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "01_dusk_oblique_north 斜视 沿街多层住宅阳台约 7 层 + 底商;video-notes(1–2层,大跨厂棚层高大,长条楼6–8层) 6–8 层; v3: 直段+弧形转角+西翼同高"
+   },
+   "centerline_EN_m": [
+    [
+     235.5,
+     174.4
+    ],
+    [
+     236.3,
+     163.68
+    ],
+    [
+     236.3,
+     152.96
+    ],
+    [
+     236.3,
+     142.25
+    ],
+    [
+     236.3,
+     131.53
+    ],
+    [
+     236.3,
+     120.81
+    ],
+    [
+     236.3,
+     110.09
+    ],
+    [
+     236.3,
+     99.37
+    ],
+    [
+     236.3,
+     88.65
+    ],
+    [
+     236.3,
+     77.94
+    ],
+    [
+     236.3,
+     67.22
+    ],
+    [
+     236.3,
+     56.5
+    ],
+    [
+     236.21,
+     55.05
+    ],
+    [
+     235.95,
+     53.63
+    ],
+    [
+     235.52,
+     52.24
+    ],
+    [
+     234.93,
+     50.92
+    ],
+    [
+     234.18,
+     49.68
+    ],
+    [
+     233.28,
+     48.54
+    ],
+    [
+     232.26,
+     47.52
+    ],
+    [
+     231.12,
+     46.62
+    ],
+    [
+     229.88,
+     45.87
+    ],
+    [
+     228.56,
+     45.28
+    ],
+    [
+     227.17,
+     44.85
+    ],
+    [
+     225.75,
+     44.59
+    ],
+    [
+     224.3,
+     44.5
+    ],
+    [
+     222.3,
+     44.5
+    ],
+    [
+     217.44,
+     44.5
+    ],
+    [
+     212.58,
+     44.5
+    ],
+    [
+     207.72,
+     44.5
+    ],
+    [
+     202.86,
+     44.5
+    ],
+    [
+     198.0,
+     44.5
+    ]
+   ],
+   "halfwidth_m": [
+    8.5,
+    8.31,
+    8.13,
+    7.94,
+    7.75,
+    7.57,
+    7.38,
+    7.2,
+    7.01,
+    6.82,
+    6.64,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0
+   ],
+   "arc": {
+    "center_EN": [
+     224.3,
+     56.5
+    ],
+    "centerline_radius_m": 12.0,
+    "outer_radius_m": 18.0,
+    "inner_radius_m": 6.0,
+    "sweep_deg": 90,
+    "turn": "南端由南北向西转",
+    "wing_to_E": 198.0,
+    "status": "INFERRED"
+   }
+  },
+  {
+   "id": "PK_nw",
+   "name": "西北停车场",
+   "category": "parking",
+   "roof_desc": "沥青/水泥",
+   "ring_EN_m": [
+    [
+     20.0,
+     212.0
+    ],
+    [
+     48.0,
+     212.0
+    ],
+    [
+     48.0,
+     140.0
+    ],
+    [
+     20.0,
+     140.0
+    ]
+   ],
+   "area_m2": 2016.0,
+   "outline_status": "CONFIRMED_presence_ESTIMATED_outline",
+   "evidence": "BASE真北瓦片 大量车辆",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "PK_w",
+   "name": "西区中部停车/场地",
+   "category": "yard",
+   "roof_desc": "沥青/水泥",
+   "ring_EN_m": [
+    [
+     36,
+     55
+    ],
+    [
+     62,
+     55
+    ],
+    [
+     62,
+     97
+    ],
+    [
+     36,
+     97
+    ]
+   ],
+   "area_m2": 1092.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "YD_ramp",
+   "name": "弧形楼与坡道之间场地",
+   "category": "yard",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     52.0,
+     134.48
+    ],
+    [
+     54.0,
+     138.85
+    ],
+    [
+     54.53,
+     140.0
+    ],
+    [
+     62.0,
+     140.0
+    ],
+    [
+     62.0,
+     112.0
+    ],
+    [
+     52.0,
+     112.0
+    ]
+   ],
+   "area_m2": 273.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "YD_arc",
+   "name": "弧形楼北段内巷",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     63,
+     165
+    ],
+    [
+     66,
+     165
+    ],
+    [
+     66,
+     213
+    ],
+    [
+     63,
+     213
+    ]
+   ],
+   "area_m2": 144.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "YD_sw",
+   "name": "西南场地",
+   "category": "yard",
+   "roof_desc": "杂",
+   "ring_EN_m": [
+    [
+     17,
+     27
+    ],
+    [
+     36,
+     27
+    ],
+    [
+     36,
+     30
+    ],
+    [
+     17,
+     30
+    ]
+   ],
+   "area_m2": 57.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "sat-clear/m1真北(BASE 西南角被GE界面遮挡)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "BS_w",
+   "name": "汽车站西侧灰顶楼",
+   "category": "building",
+   "roof_desc": "灰色平顶(局部深灰)",
+   "ring_EN_m": [
+    [
+     97,
+     15
+    ],
+    [
+     120,
+     15
+    ],
+    [
+     120,
+     31
+    ],
+    [
+     97,
+     31
+    ]
+   ],
+   "area_m2": 368.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U1/U33",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.4,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 24.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "v3: 南排楼屋面(灰); 楼高 24 m ESTIMATED"
+   },
+   "v3_change": "降为屋面构件(楼体由 SR/ST 西翼承担)"
+  },
+  {
+   "id": "BS_wt",
+   "name": "汽车站西侧白色钢架棚",
+   "category": "shed",
+   "roof_desc": "白色钢架",
+   "ring_EN_m": [
+    [
+     90,
+     34
+    ],
+    [
+     95,
+     34
+    ],
+    [
+     95,
+     45
+    ],
+    [
+     90,
+     45
+    ]
+   ],
+   "area_m2": 55.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "OR02",
+   "name": "西区红橙色小屋顶",
+   "category": "shed",
+   "roof_desc": "红橙",
+   "ring_EN_m": [
+    [
+     36,
+     83
+    ],
+    [
+     43,
+     83
+    ],
+    [
+     43,
+     90
+    ],
+    [
+     36,
+     90
+    ]
+   ],
+   "area_m2": 49.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U4",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "DPw3",
+   "name": "汽库东侧白色窄棚",
+   "category": "shed",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     84,
+     66
+    ],
+    [
+     88,
+     66
+    ],
+    [
+     88,
+     80
+    ],
+    [
+     84,
+     80
+    ]
+   ],
+   "area_m2": 56.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U8",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "DPw4",
+   "name": "汽库西侧白色窄棚",
+   "category": "shed",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     59.5,
+     71
+    ],
+    [
+     62.5,
+     71
+    ],
+    [
+     62.5,
+     81
+    ],
+    [
+     59.5,
+     81
+    ]
+   ],
+   "area_m2": 30.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U10",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "OF_c",
+   "name": "办公楼北沿浅蓝/白色长雨棚",
+   "category": "canopy",
+   "roof_desc": "浅蓝/白",
+   "ring_EN_m": [
+    [
+     96,
+     83.5
+    ],
+    [
+     180,
+     83.5
+    ],
+    [
+     180,
+     88.5
+    ],
+    [
+     120,
+     88.5
+    ],
+    [
+     120,
+     91
+    ],
+    [
+     96,
+     91
+    ]
+   ],
+   "area_m2": 480.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U2/U6/U35",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "北沿雨棚"
+   }
+  },
+  {
+   "id": "BS_e6",
+   "name": "汽车站东南角白色小房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     231.5,
+     27
+    ],
+    [
+     236,
+     27
+    ],
+    [
+     236,
+     32
+    ],
+    [
+     231.5,
+     32
+    ]
+   ],
+   "area_m2": 22.5,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 覆盖检查 U26",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "ST_n",
+   "name": "临街楼北端白色小房",
+   "category": "building",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     221.5,
+     169
+    ],
+    [
+     225,
+     169
+    ],
+    [
+     225,
+     177
+    ],
+    [
+     221.5,
+     177
+    ]
+   ],
+   "area_m2": 28.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 覆盖检查 U39",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "小房"
+   }
+  },
+  {
+   "id": "W27",
+   "name": "停车场南缘白色雨棚(东西向)",
+   "category": "canopy",
+   "roof_desc": "白",
+   "ring_EN_m": [
+    [
+     33,
+     139.5
+    ],
+    [
+     43,
+     139.5
+    ],
+    [
+     43,
+     142
+    ],
+    [
+     33,
+     142
+    ]
+   ],
+   "area_m2": 25.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U37",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "雨棚 4m 估"
+   }
+  },
+  {
+   "id": "A05",
+   "name": "弧形楼北段与蓝顶大棚间小房",
+   "category": "building",
+   "roof_desc": "米黄",
+   "ring_EN_m": [
+    [
+     70,
+     146
+    ],
+    [
+     81,
+     146
+    ],
+    [
+     81,
+     150
+    ],
+    [
+     76,
+     150
+    ],
+    [
+     76,
+     155
+    ],
+    [
+     70,
+     155
+    ]
+   ],
+   "area_m2": 74.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片 覆盖检查 U40",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "RD_n",
+   "name": "市场北缘道路/檐口带",
+   "category": "road",
+   "roof_desc": "沥青/混凝土",
+   "ring_EN_m": [
+    [
+     96,
+     213
+    ],
+    [
+     150,
+     210
+    ],
+    [
+     150,
+     200
+    ],
+    [
+     178,
+     200
+    ],
+    [
+     180,
+     200.3
+    ],
+    [
+     126,
+     217.8
+    ],
+    [
+     96,
+     216.3
+    ]
+   ],
+   "area_m2": 378.9,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_rf_c",
+   "name": "冷库北侧蓝色弧形雨棚(路边摊位带)",
+   "category": "canopy",
+   "roof_desc": "蓝色调(可能为路面反光)",
+   "ring_EN_m": [
+    [
+     55.5,
+     95
+    ],
+    [
+     58,
+     98.5
+    ],
+    [
+     63,
+     100.8
+    ],
+    [
+     70,
+     100.5
+    ],
+    [
+     76,
+     98.5
+    ],
+    [
+     80,
+     96.5
+    ],
+    [
+     80,
+     94.8
+    ],
+    [
+     76,
+     96.5
+    ],
+    [
+     70,
+     98.3
+    ],
+    [
+     63,
+     98.5
+    ],
+    [
+     59,
+     96.5
+    ],
+    [
+     57,
+     93
+    ]
+   ],
+   "area_m2": 55.4,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 覆盖检查 81.6㎡ 蓝色像素带;无法确认是雨棚还是路面,按低矮雨棚占位",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "雨棚 4m 估"
+   }
+  },
+  {
+   "id": "W29",
+   "name": "西区小棚群(红橙/白)",
+   "category": "shed",
+   "roof_desc": "红橙/白杂",
+   "ring_EN_m": [
+    [
+     32,
+     90
+    ],
+    [
+     48,
+     90
+    ],
+    [
+     48,
+     97
+    ],
+    [
+     32,
+     97
+    ]
+   ],
+   "area_m2": 112.0,
+   "outline_status": "UNKNOWN",
+   "evidence": "BASE真北瓦片 覆盖检查 55㎡",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "mono",
+    "eave_h_m": 3.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "棚/小构筑 3m 估"
+   }
+  },
+  {
+   "id": "A06",
+   "name": "弧形楼弧段内侧浅灰小房(北)",
+   "category": "building",
+   "roof_desc": "浅灰",
+   "ring_EN_m": [
+    [
+     63.0,
+     153.0
+    ],
+    [
+     63.0,
+     147.0
+    ],
+    [
+     57.52,
+     147.0
+    ],
+    [
+     59.07,
+     151.01
+    ],
+    [
+     59.07,
+     151.01
+    ],
+    [
+     59.14,
+     151.23
+    ],
+    [
+     59.14,
+     151.23
+    ],
+    [
+     59.2,
+     151.46
+    ],
+    [
+     59.2,
+     151.46
+    ],
+    [
+     59.23,
+     151.69
+    ],
+    [
+     59.23,
+     151.69
+    ],
+    [
+     59.38,
+     153.0
+    ]
+   ],
+   "area_m2": 26.3,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 4.0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "一层小房按 4m 估"
+   }
+  },
+  {
+   "id": "BS_park_w",
+   "name": "汽车站西侧停车坪",
+   "category": "parking",
+   "roof_desc": "沥青,白色长方块为大巴",
+   "ring_EN_m": [
+    [
+     97,
+     31
+    ],
+    [
+     113,
+     31
+    ],
+    [
+     113,
+     58
+    ],
+    [
+     97,
+     58
+    ]
+   ],
+   "area_m2": 432.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "G_yard",
+   "name": "加油站场地(罩棚西侧)",
+   "category": "yard",
+   "roof_desc": "水泥",
+   "ring_EN_m": [
+    [
+     51,
+     15
+    ],
+    [
+     60,
+     15
+    ],
+    [
+     60,
+     37
+    ],
+    [
+     51,
+     37
+    ]
+   ],
+   "area_m2": 198.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_arcW",
+   "name": "弧形楼北段西侧通道",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     48.0,
+     213.0
+    ],
+    [
+     52.0,
+     213.0
+    ],
+    [
+     52.0,
+     165.0
+    ],
+    [
+     48.0,
+     165.0
+    ]
+   ],
+   "area_m2": 192.0,
+   "outline_status": "ESTIMATED",
+   "evidence": "BASE真北瓦片",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR01",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E91 N216)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     95.79,
+     216.28
+    ],
+    [
+     82.37,
+     215.75
+    ],
+    [
+     95.79,
+     215.75
+    ]
+   ],
+   "area_m2": 5.9,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR02",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E65 N172)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     75.83,
+     215.4
+    ],
+    [
+     75.83,
+     155.18
+    ],
+    [
+     69.83,
+     155.01
+    ],
+    [
+     69.83,
+     145.65
+    ],
+    [
+     64.53,
+     143.17
+    ],
+    [
+     62.24,
+     139.47
+    ],
+    [
+     62.24,
+     146.88
+    ],
+    [
+     63.12,
+     147.06
+    ],
+    [
+     63.12,
+     153.06
+    ],
+    [
+     59.4,
+     153.15
+    ],
+    [
+     60.13,
+     159.69
+    ],
+    [
+     60.13,
+     159.69
+    ],
+    [
+     60.14,
+     159.86
+    ],
+    [
+     63.12,
+     159.95
+    ],
+    [
+     63.12,
+     164.89
+    ],
+    [
+     75.13,
+     165.07
+    ],
+    [
+     75.13,
+     212.93
+    ],
+    [
+     47.93,
+     213.1
+    ],
+    [
+     47.76,
+     212.22
+    ],
+    [
+     20.21,
+     212.22
+    ],
+    [
+     20.21,
+     212.57
+    ]
+   ],
+   "area_m2": 339.0,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR03",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E2 N188)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     0.07,
+     211.52
+    ],
+    [
+     5.37,
+     150.77
+    ],
+    [
+     0.96,
+     211.52
+    ]
+   ],
+   "area_m2": 35.5,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR04",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E223 N174)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     178.26,
+     199.86
+    ],
+    [
+     180.2,
+     190.15
+    ],
+    [
+     214.99,
+     188.2
+    ],
+    [
+     222.23,
+     182.02
+    ],
+    [
+     222.23,
+     177.08
+    ],
+    [
+     225.05,
+     177.08
+    ],
+    [
+     225.23,
+     174.43
+    ],
+    [
+     239.89,
+     174.78
+    ],
+    [
+     244.13,
+     174.61
+    ],
+    [
+     243.42,
+     97.97
+    ],
+    [
+     249.07,
+     177.79
+    ],
+    [
+     180.38,
+     200.21
+    ]
+   ],
+   "area_m2": 617.4,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR05",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E84 N148)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     81.13,
+     149.88
+    ],
+    [
+     81.13,
+     146.18
+    ],
+    [
+     87.84,
+     146.18
+    ],
+    [
+     87.84,
+     149.88
+    ]
+   ],
+   "area_m2": 26.8,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR06",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E36 N136)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     30.27,
+     139.82
+    ],
+    [
+     30.27,
+     133.11
+    ],
+    [
+     42.81,
+     133.11
+    ],
+    [
+     42.81,
+     139.29
+    ],
+    [
+     33.1,
+     139.29
+    ],
+    [
+     32.92,
+     139.82
+    ]
+   ],
+   "area_m2": 82.3,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR07",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E69 N134)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     69.83,
+     135.93
+    ],
+    [
+     67.89,
+     133.28
+    ],
+    [
+     67.53,
+     132.22
+    ],
+    [
+     69.83,
+     132.22
+    ]
+   ],
+   "area_m2": 5.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR08",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E67 N126)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     67.36,
+     130.99
+    ],
+    [
+     67.0,
+     128.52
+    ],
+    [
+     67.36,
+     120.22
+    ]
+   ],
+   "area_m2": 4.3,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR09",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E78 N116)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     89.78,
+     127.81
+    ],
+    [
+     89.25,
+     127.81
+    ],
+    [
+     89.08,
+     117.74
+    ],
+    [
+     68.24,
+     117.74
+    ],
+    [
+     68.77,
+     115.98
+    ],
+    [
+     81.84,
+     108.74
+    ],
+    [
+     81.84,
+     117.04
+    ],
+    [
+     89.78,
+     117.21
+    ]
+   ],
+   "area_m2": 86.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR10",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E32 N109)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     42.81,
+     122.16
+    ],
+    [
+     33.98,
+     122.16
+    ],
+    [
+     33.8,
+     118.1
+    ],
+    [
+     31.86,
+     117.92
+    ],
+    [
+     31.86,
+     109.97
+    ],
+    [
+     33.8,
+     109.8
+    ],
+    [
+     33.8,
+     99.91
+    ],
+    [
+     36.81,
+     99.73
+    ],
+    [
+     36.81,
+     97.08
+    ],
+    [
+     30.98,
+     97.08
+    ],
+    [
+     30.8,
+     96.2
+    ],
+    [
+     28.15,
+     96.2
+    ],
+    [
+     28.15,
+     109.8
+    ],
+    [
+     30.27,
+     109.97
+    ],
+    [
+     30.27,
+     123.75
+    ],
+    [
+     42.81,
+     123.75
+    ]
+   ],
+   "area_m2": 130.9,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR11",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E16 N110)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     25.86,
+     111.74
+    ],
+    [
+     9.08,
+     111.74
+    ],
+    [
+     8.73,
+     112.98
+    ],
+    [
+     8.55,
+     116.51
+    ],
+    [
+     10.32,
+     94.79
+    ],
+    [
+     9.79,
+     109.97
+    ],
+    [
+     25.86,
+     110.15
+    ]
+   ],
+   "area_m2": 38.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR12",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E69 N105)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     60.12,
+     111.74
+    ],
+    [
+     60.12,
+     108.21
+    ],
+    [
+     63.12,
+     108.03
+    ],
+    [
+     63.12,
+     102.91
+    ],
+    [
+     81.84,
+     99.38
+    ],
+    [
+     81.84,
+     100.97
+    ],
+    [
+     74.77,
+     105.21
+    ],
+    [
+     74.6,
+     102.73
+    ],
+    [
+     69.48,
+     102.73
+    ],
+    [
+     69.48,
+     106.09
+    ],
+    [
+     73.36,
+     106.09
+    ],
+    [
+     62.24,
+     112.8
+    ],
+    [
+     62.06,
+     111.74
+    ]
+   ],
+   "area_m2": 100.2,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR13",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E48 N105)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     47.23,
+     111.74
+    ],
+    [
+     47.23,
+     100.44
+    ],
+    [
+     53.94,
+     100.79
+    ],
+    [
+     47.76,
+     100.97
+    ],
+    [
+     47.76,
+     111.74
+    ]
+   ],
+   "area_m2": 10.8,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR14",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E219 N84)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     220.11,
+     106.44
+    ],
+    [
+     220.11,
+     88.08
+    ],
+    [
+     215.17,
+     87.9
+    ],
+    [
+     215.17,
+     83.13
+    ],
+    [
+     218.17,
+     82.96
+    ],
+    [
+     218.17,
+     74.13
+    ],
+    [
+     220.82,
+     74.13
+    ]
+   ],
+   "area_m2": 56.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR15",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E93 N97)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     88.37,
+     98.85
+    ],
+    [
+     94.91,
+     93.02
+    ],
+    [
+     94.91,
+     98.85
+    ]
+   ],
+   "area_m2": 20.4,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR16",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E82 N67)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     62.24,
+     93.37
+    ],
+    [
+     62.24,
+     81.19
+    ],
+    [
+     62.77,
+     81.01
+    ],
+    [
+     62.77,
+     70.95
+    ],
+    [
+     62.24,
+     70.77
+    ],
+    [
+     62.24,
+     55.23
+    ],
+    [
+     77.07,
+     55.23
+    ],
+    [
+     77.25,
+     40.22
+    ],
+    [
+     81.84,
+     40.22
+    ],
+    [
+     82.01,
+     58.23
+    ],
+    [
+     88.9,
+     58.23
+    ],
+    [
+     89.08,
+     60.17
+    ],
+    [
+     97.02,
+     60.17
+    ],
+    [
+     97.2,
+     58.23
+    ],
+    [
+     112.92,
+     58.23
+    ],
+    [
+     112.92,
+     60.53
+    ],
+    [
+     103.21,
+     60.7
+    ],
+    [
+     101.09,
+     58.23
+    ],
+    [
+     97.02,
+     60.17
+    ],
+    [
+     97.2,
+     62.82
+    ],
+    [
+     99.32,
+     64.41
+    ],
+    [
+     99.32,
+     80.31
+    ],
+    [
+     97.91,
+     83.31
+    ],
+    [
+     95.79,
+     83.49
+    ],
+    [
+     95.79,
+     85.78
+    ],
+    [
+     95.26,
+     85.78
+    ],
+    [
+     95.08,
+     81.9
+    ],
+    [
+     85.02,
+     81.9
+    ],
+    [
+     84.84,
+     87.72
+    ],
+    [
+     83.6,
+     88.61
+    ],
+    [
+     83.96,
+     80.13
+    ],
+    [
+     88.19,
+     79.95
+    ],
+    [
+     88.19,
+     66.0
+    ],
+    [
+     84.66,
+     65.83
+    ],
+    [
+     84.66,
+     63.71
+    ],
+    [
+     64.0,
+     62.82
+    ],
+    [
+     63.65,
+     64.77
+    ],
+    [
+     62.41,
+     89.49
+    ],
+    [
+     64.18,
+     89.84
+    ],
+    [
+     80.25,
+     90.73
+    ],
+    [
+     71.95,
+     95.85
+    ]
+   ],
+   "area_m2": 589.5,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR17",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E125 N83)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     106.91,
+     83.31
+    ],
+    [
+     134.82,
+     82.6
+    ],
+    [
+     136.05,
+     83.31
+    ]
+   ],
+   "area_m2": 14.4,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR18",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E156 N83)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     137.46,
+     83.31
+    ],
+    [
+     138.88,
+     82.07
+    ],
+    [
+     169.43,
+     81.37
+    ],
+    [
+     172.78,
+     83.31
+    ]
+   ],
+   "area_m2": 58.8,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR19",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E179 N79)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     173.14,
+     83.31
+    ],
+    [
+     175.43,
+     80.84
+    ],
+    [
+     175.08,
+     74.13
+    ],
+    [
+     182.85,
+     74.13
+    ],
+    [
+     182.85,
+     82.78
+    ],
+    [
+     180.02,
+     82.78
+    ],
+    [
+     179.85,
+     83.31
+    ]
+   ],
+   "area_m2": 73.8,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR20",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E35 N55)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     34.51,
+     59.82
+    ],
+    [
+     34.69,
+     50.11
+    ],
+    [
+     35.75,
+     50.11
+    ],
+    [
+     35.75,
+     59.82
+    ]
+   ],
+   "area_m2": 12.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR21",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E45 N50)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     42.1,
+     54.88
+    ],
+    [
+     42.1,
+     45.16
+    ],
+    [
+     47.76,
+     45.16
+    ],
+    [
+     47.76,
+     54.88
+    ]
+   ],
+   "area_m2": 57.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR22",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E231 N40)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     205.1,
+     37.75
+    ],
+    [
+     205.1,
+     36.16
+    ],
+    [
+     225.94,
+     36.16
+    ],
+    [
+     226.11,
+     26.27
+    ],
+    [
+     231.41,
+     26.98
+    ],
+    [
+     231.59,
+     32.1
+    ],
+    [
+     236.0,
+     32.1
+    ],
+    [
+     236.18,
+     27.51
+    ],
+    [
+     238.3,
+     27.86
+    ],
+    [
+     239.89,
+     50.82
+    ],
+    [
+     229.82,
+     50.46
+    ],
+    [
+     229.47,
+     54.88
+    ],
+    [
+     226.11,
+     54.88
+    ],
+    [
+     226.11,
+     50.11
+    ],
+    [
+     230.18,
+     49.93
+    ],
+    [
+     230.18,
+     43.93
+    ],
+    [
+     226.11,
+     43.75
+    ],
+    [
+     225.94,
+     37.75
+    ],
+    [
+     216.22,
+     37.75
+    ],
+    [
+     216.05,
+     36.86
+    ],
+    [
+     205.98,
+     36.86
+    ],
+    [
+     205.81,
+     37.75
+    ]
+   ],
+   "area_m2": 308.1,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR23",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E35 N35)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     35.04,
+     39.87
+    ],
+    [
+     35.22,
+     30.15
+    ],
+    [
+     35.75,
+     30.15
+    ],
+    [
+     35.75,
+     39.87
+    ]
+   ],
+   "area_m2": 8.3,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR24",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E121 N34)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     113.27,
+     37.75
+    ],
+    [
+     113.27,
+     31.21
+    ],
+    [
+     144.88,
+     31.21
+    ],
+    [
+     144.88,
+     32.1
+    ],
+    [
+     124.75,
+     31.39
+    ],
+    [
+     124.04,
+     37.75
+    ]
+   ],
+   "area_m2": 88.8,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR25",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E182 N37)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     176.14,
+     37.75
+    ],
+    [
+     176.31,
+     36.16
+    ],
+    [
+     187.79,
+     36.16
+    ],
+    [
+     187.79,
+     37.75
+    ]
+   ],
+   "area_m2": 20.7,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR26",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E23 N9)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     16.32,
+     27.86
+    ],
+    [
+     18.79,
+     -0.04
+    ],
+    [
+     41.57,
+     2.78
+    ],
+    [
+     35.92,
+     2.78
+    ],
+    [
+     35.75,
+     3.84
+    ],
+    [
+     27.27,
+     3.84
+    ],
+    [
+     27.09,
+     2.78
+    ],
+    [
+     18.97,
+     2.78
+    ],
+    [
+     18.79,
+     26.8
+    ],
+    [
+     17.03,
+     26.8
+    ],
+    [
+     16.85,
+     27.86
+    ]
+   ],
+   "area_m2": 81.9,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR27",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E153 N17)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     165.19,
+     18.5
+    ],
+    [
+     155.12,
+     18.32
+    ],
+    [
+     154.95,
+     17.79
+    ],
+    [
+     145.23,
+     17.79
+    ],
+    [
+     145.23,
+     16.03
+    ]
+   ],
+   "area_m2": 19.8,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR28",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E52 N8)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     42.1,
+     8.79
+    ],
+    [
+     42.1,
+     2.96
+    ],
+    [
+     65.24,
+     5.78
+    ],
+    [
+     59.76,
+     5.96
+    ],
+    [
+     59.76,
+     14.79
+    ],
+    [
+     51.11,
+     14.79
+    ],
+    [
+     50.93,
+     8.79
+    ]
+   ],
+   "area_m2": 143.2,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "GR29",
+   "name": "其余硬化地面/通道/绿化(残余区自动生成,中心E109 N13)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     97.2,
+     9.85
+    ],
+    [
+     131.99,
+     14.26
+    ],
+    [
+     119.98,
+     14.26
+    ],
+    [
+     119.81,
+     14.79
+    ],
+    [
+     97.2,
+     14.79
+    ]
+   ],
+   "area_m2": 92.6,
+   "outline_status": "INFERRED",
+   "evidence": "黄框内未被命名对象覆盖的残余区,经检查该区内无未覆盖屋顶(疑似屋顶像素已全部归入对象或判为车辆)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0.0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "SR",
+   "name": "汽车站南排多层住宅楼(含屋面红顶/碎石屋面)",
+   "category": "building",
+   "roof_desc": "深灰/碎石屋面",
+   "ring_EN_m": [
+    [
+     97,
+     15.5
+    ],
+    [
+     205,
+     17
+    ],
+    [
+     205,
+     36
+    ],
+    [
+     97,
+     35
+    ]
+   ],
+   "outline_status": "INFERRED",
+   "evidence": "视频 f_0133/f_0147/f_0012/f_0001：汽车站南侧为一栋多层住宅(北立面窗格面向停车场),红色彩钢顶在其屋面;PnP 投影 BS_r 于 z=24 与帧中红顶重合。层数按与临街楼同高 ESTIMATED",
+   "p2_source": null,
+   "area_m2": 2079.0,
+   "model3d": {
+    "roof_type": "residential",
+    "eave_h_m": 24.0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "与临街楼同高(底商 4.5 m + 6×3.25 m) ESTIMATED;依据视频帧立面与 PnP 投影"
+   }
+  },
+  {
+   "id": "SRc",
+   "name": "南排楼东端与临街楼西翼连接体",
+   "category": "building",
+   "roof_desc": "深灰",
+   "ring_EN_m": [
+    [
+     195,
+     35
+    ],
+    [
+     205,
+     35
+    ],
+    [
+     205,
+     50.5
+    ],
+    [
+     195,
+     50.5
+    ]
+   ],
+   "outline_status": "INFERRED",
+   "evidence": "frame f_0133 立面连续;GE BS_e1 与西翼之间无地面间隙。连接方式 UNKNOWN",
+   "p2_source": null,
+   "area_m2": 155.0,
+   "model3d": {
+    "roof_type": "flat",
+    "eave_h_m": 24.0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "与临街楼同高(底商 4.5 m + 6×3.25 m) ESTIMATED;依据视频帧立面与 PnP 投影"
+   }
+  },
+  {
+   "id": "CORR",
+   "name": "黄色长廊棚(直段+弯道弧段,棚下摊位)",
+   "area_m2": 556.9,
+   "ring_EN_m": [
+    [
+     60.5,
+     180.01
+    ],
+    [
+     60.5,
+     179.95
+    ],
+    [
+     60.1,
+     159.95
+    ],
+    [
+     60.08,
+     159.7
+    ],
+    [
+     59.18,
+     151.7
+    ],
+    [
+     59.15,
+     151.47
+    ],
+    [
+     59.09,
+     151.25
+    ],
+    [
+     59.02,
+     151.03
+    ],
+    [
+     56.32,
+     144.03
+    ],
+    [
+     56.25,
+     143.87
+    ],
+    [
+     53.95,
+     138.87
+    ],
+    [
+     50.85,
+     132.09
+    ],
+    [
+     49.69,
+     127.61
+    ],
+    [
+     49.51,
+     122.13
+    ],
+    [
+     50.25,
+     116.53
+    ],
+    [
+     51.41,
+     112.2
+    ],
+    [
+     46.19,
+     110.8
+    ],
+    [
+     44.99,
+     115.3
+    ],
+    [
+     44.92,
+     115.64
+    ],
+    [
+     44.12,
+     121.64
+    ],
+    [
+     44.1,
+     121.87
+    ],
+    [
+     44.1,
+     122.09
+    ],
+    [
+     44.3,
+     128.09
+    ],
+    [
+     44.33,
+     128.39
+    ],
+    [
+     44.39,
+     128.68
+    ],
+    [
+     45.69,
+     133.68
+    ],
+    [
+     45.76,
+     133.9
+    ],
+    [
+     45.84,
+     134.12
+    ],
+    [
+     49.04,
+     141.12
+    ],
+    [
+     49.05,
+     141.13
+    ],
+    [
+     51.31,
+     146.05
+    ],
+    [
+     53.86,
+     152.65
+    ],
+    [
+     54.7,
+     160.18
+    ],
+    [
+     55.1,
+     180.02
+    ],
+    [
+     55.0,
+     212.49
+    ],
+    [
+     60.4,
+     212.51
+    ]
+   ],
+   "centerline_EN_m": [
+    [
+     57.7,
+     212.5
+    ],
+    [
+     57.8,
+     180
+    ],
+    [
+     57.4,
+     160
+    ],
+    [
+     56.5,
+     152
+    ],
+    [
+     53.8,
+     145
+    ],
+    [
+     51.5,
+     140
+    ],
+    [
+     48.3,
+     133
+    ],
+    [
+     47.0,
+     128
+    ],
+    [
+     46.8,
+     122
+    ],
+    [
+     47.6,
+     116
+    ],
+    [
+     48.8,
+     111.5
+    ]
+   ],
+   "halfwidth_m": 2.7,
+   "model3d": {
+    "roof_type": "corridor_shed",
+    "eave_h_m": 3.4,
+    "ridge_h_m": 4.1,
+    "rise_m": 0.7,
+    "ridge_dir": "along",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "航拍 04:单层长棚,与周边一层小棚同高;按 3.4 m 檐口/4.1 m 屋脊估"
+   },
+   "category": "canopy",
+   "roof_desc": "米黄/浅黄 钢瓦长廊棚(两坡,沿轴线屋脊)",
+   "outline_status": "ESTIMATED(卫星逐 10 m 量测中线+宽度)",
+   "evidence": "GE 真北底图 sat_west 网格读数:直段 E55–60.5(N152–212),弧段 N152→111 中心线 E56.5→47;航拍 04 显示单层长棚、棚下亮灯店面;用户 07 标注",
+   "p2_source": null
+  },
+  {
+   "id": "CORR_T",
+   "name": "黄色长廊棚北端转折段",
+   "area_m2": 124.1,
+   "ring_EN_m": [
+    [
+     75.0,
+     204.0
+    ],
+    [
+     75.0,
+     212.5
+    ],
+    [
+     60.4,
+     212.5
+    ],
+    [
+     60.4,
+     204.0
+    ]
+   ],
+   "model3d": {
+    "roof_type": "canopy",
+    "eave_h_m": 3.6,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0.0,
+    "height_status": "ESTIMATED",
+    "height_basis": "同 CORR"
+   },
+   "category": "canopy",
+   "roof_desc": "米黄/浅黄 钢瓦长廊棚(两坡,沿轴线屋脊)",
+   "outline_status": "ESTIMATED(卫星逐 10 m 量测中线+宽度)",
+   "evidence": "GE 真北底图 sat_west 网格读数:直段 E55–60.5(N152–212),弧段 N152→111 中心线 E56.5→47;航拍 04 显示单层长棚、棚下亮灯店面;用户 07 标注",
+   "p2_source": null
+  },
+  {
+   "id": "RD_corrW",
+   "name": "长廊棚西侧通道",
+   "category": "road",
+   "roof_desc": "沥青",
+   "ring_EN_m": [
+    [
+     55.05,
+     177.53
+    ],
+    [
+     54.7,
+     160.18
+    ],
+    [
+     53.86,
+     152.65
+    ],
+    [
+     53.61,
+     152.0
+    ],
+    [
+     50.0,
+     152.0
+    ],
+    [
+     50.0,
+     212.5
+    ],
+    [
+     55.05,
+     212.5
+    ],
+    [
+     55.05,
+     212.49
+    ],
+    [
+     55.0,
+     212.49
+    ],
+    [
+     55.05,
+     196.25
+    ]
+   ],
+   "area_m2": 0,
+   "outline_status": "ESTIMATED",
+   "evidence": "卫星深色车道",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "YD_corrE",
+   "name": "长廊棚东侧摊前通道(粉/橙色雨搭)",
+   "category": "yard",
+   "roof_desc": "地面",
+   "ring_EN_m": [
+    [
+     66.0,
+     153.0
+    ],
+    [
+     60.45,
+     153.0
+    ],
+    [
+     60.45,
+     177.47
+    ],
+    [
+     60.5,
+     179.95
+    ],
+    [
+     60.5,
+     180.01
+    ],
+    [
+     60.45,
+     196.25
+    ],
+    [
+     60.45,
+     204.0
+    ],
+    [
+     66.0,
+     204.0
+    ]
+   ],
+   "area_m2": 0,
+   "outline_status": "ESTIMATED",
+   "evidence": "卫星 E60.5–63 粉橙色小雨搭+通道",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "NS",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "STRIP_LK",
+   "name": "冷库北侧连续摊位带(用户红线)",
+   "category": "yard",
+   "roof_desc": "地面/店面前沿",
+   "ring_EN_m": [
+    [
+     45.75,
+     89.73
+    ],
+    [
+     47.63,
+     90.2
+    ],
+    [
+     51.39,
+     91.42
+    ],
+    [
+     54.09,
+     93.31
+    ],
+    [
+     56.0,
+     95.51
+    ],
+    [
+     58.16,
+     97.77
+    ],
+    [
+     61.63,
+     99.77
+    ],
+    [
+     61.74,
+     99.57
+    ],
+    [
+     62.48,
+     100.67
+    ],
+    [
+     70.17,
+     100.39
+    ],
+    [
+     76.37,
+     98.43
+    ],
+    [
+     80.03,
+     96.7
+    ],
+    [
+     79.17,
+     94.9
+    ],
+    [
+     75.63,
+     96.57
+    ],
+    [
+     69.83,
+     98.41
+    ],
+    [
+     63.52,
+     98.63
+    ],
+    [
+     63.13,
+     98.05
+    ],
+    [
+     62.3,
+     98.6
+    ],
+    [
+     62.97,
+     97.43
+    ],
+    [
+     59.84,
+     95.63
+    ],
+    [
+     58.0,
+     93.69
+    ],
+    [
+     55.91,
+     91.29
+    ],
+    [
+     52.61,
+     88.98
+    ],
+    [
+     48.37,
+     87.6
+    ],
+    [
+     46.25,
+     87.07
+    ],
+    [
+     42.13,
+     86.56
+    ],
+    [
+     38.1,
+     86.25
+    ],
+    [
+     37.9,
+     88.95
+    ],
+    [
+     41.87,
+     89.24
+    ]
+   ],
+   "area_m2": 111.7,
+   "outline_status": "USER_ANNOTATED(08 红线)",
+   "evidence": "用户 08 红线(左段+弯起段)+RD_rf_c 雨棚(右段)",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "STRIP_GAS",
+   "name": "加油站西侧人名列摊位带(用户红线=西沿)",
+   "category": "yard",
+   "roof_desc": "地面/店面前沿",
+   "ring_EN_m": [
+    [
+     41.6,
+     63.7
+    ],
+    [
+     46.0,
+     63.65
+    ],
+    [
+     45.9,
+     55.02
+    ],
+    [
+     45.99,
+     50.32
+    ],
+    [
+     46.47,
+     46.55
+    ],
+    [
+     46.5,
+     46.11
+    ],
+    [
+     46.6,
+     42.16
+    ],
+    [
+     46.79,
+     38.22
+    ],
+    [
+     46.8,
+     38.11
+    ],
+    [
+     46.9,
+     34.22
+    ],
+    [
+     47.18,
+     30.38
+    ],
+    [
+     47.56,
+     26.65
+    ],
+    [
+     48.31,
+     22.86
+    ],
+    [
+     48.39,
+     22.33
+    ],
+    [
+     48.68,
+     18.38
+    ],
+    [
+     49.07,
+     14.56
+    ],
+    [
+     49.55,
+     11.48
+    ],
+    [
+     45.2,
+     10.8
+    ],
+    [
+     44.7,
+     14.0
+    ],
+    [
+     44.3,
+     18.0
+    ],
+    [
+     44.0,
+     22.0
+    ],
+    [
+     43.2,
+     26.0
+    ],
+    [
+     42.8,
+     30.0
+    ],
+    [
+     42.5,
+     34.0
+    ],
+    [
+     42.4,
+     38.0
+    ],
+    [
+     42.2,
+     42.0
+    ],
+    [
+     42.1,
+     46.0
+    ],
+    [
+     41.6,
+     50.0
+    ],
+    [
+     41.5,
+     55.0
+    ]
+   ],
+   "area_m2": 232.1,
+   "outline_status": "USER_ANNOTATED(08 红线)",
+   "evidence": "用户 08 红线,贴蓝顶长条西沿 N10.8–63.7",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  },
+  {
+   "id": "RD_join",
+   "name": "弯道脚左右路汇合带(通往加油站)",
+   "category": "road",
+   "roof_desc": "沥青路面",
+   "ring_EN_m": [
+    [
+     72.0,
+     100.0
+    ],
+    [
+     86.0,
+     97.0
+    ],
+    [
+     92.0,
+     94.0
+    ],
+    [
+     96.0,
+     90.0
+    ],
+    [
+     96.0,
+     86.0
+    ],
+    [
+     90.0,
+     86.0
+    ],
+    [
+     80.0,
+     92.0
+    ],
+    [
+     70.0,
+     96.0
+    ],
+    [
+     61.98,
+     96.8
+    ],
+    [
+     62.99,
+     97.39
+    ],
+    [
+     63.0,
+     97.39
+    ],
+    [
+     63.0,
+     97.39
+    ],
+    [
+     63.01,
+     97.4
+    ],
+    [
+     63.01,
+     97.4
+    ],
+    [
+     63.01,
+     97.4
+    ],
+    [
+     63.01,
+     97.41
+    ],
+    [
+     63.02,
+     97.41
+    ],
+    [
+     63.02,
+     97.42
+    ],
+    [
+     63.02,
+     97.42
+    ],
+    [
+     63.02,
+     97.43
+    ],
+    [
+     63.02,
+     97.43
+    ],
+    [
+     63.02,
+     97.44
+    ],
+    [
+     63.02,
+     97.44
+    ],
+    [
+     63.02,
+     97.45
+    ],
+    [
+     63.02,
+     97.45
+    ],
+    [
+     63.01,
+     97.45
+    ],
+    [
+     62.45,
+     98.44
+    ],
+    [
+     63.1,
+     98.01
+    ],
+    [
+     63.11,
+     98.01
+    ],
+    [
+     63.11,
+     98.0
+    ],
+    [
+     63.12,
+     98.0
+    ],
+    [
+     63.12,
+     98.0
+    ],
+    [
+     63.13,
+     98.0
+    ],
+    [
+     63.13,
+     98.0
+    ],
+    [
+     63.13,
+     98.0
+    ],
+    [
+     63.14,
+     98.0
+    ],
+    [
+     63.14,
+     98.0
+    ],
+    [
+     63.15,
+     98.0
+    ],
+    [
+     63.15,
+     98.01
+    ],
+    [
+     63.16,
+     98.01
+    ],
+    [
+     63.16,
+     98.01
+    ],
+    [
+     63.17,
+     98.01
+    ],
+    [
+     63.17,
+     98.02
+    ],
+    [
+     63.17,
+     98.02
+    ],
+    [
+     63.55,
+     98.58
+    ],
+    [
+     69.82,
+     98.36
+    ],
+    [
+     75.61,
+     96.52
+    ],
+    [
+     79.15,
+     94.85
+    ],
+    [
+     79.15,
+     94.85
+    ],
+    [
+     79.16,
+     94.85
+    ],
+    [
+     79.16,
+     94.85
+    ],
+    [
+     79.17,
+     94.85
+    ],
+    [
+     79.17,
+     94.85
+    ],
+    [
+     79.18,
+     94.85
+    ],
+    [
+     79.18,
+     94.85
+    ],
+    [
+     79.19,
+     94.85
+    ],
+    [
+     79.19,
+     94.85
+    ],
+    [
+     79.2,
+     94.86
+    ],
+    [
+     79.2,
+     94.86
+    ],
+    [
+     79.2,
+     94.86
+    ],
+    [
+     79.21,
+     94.87
+    ],
+    [
+     79.21,
+     94.87
+    ],
+    [
+     79.21,
+     94.87
+    ],
+    [
+     79.22,
+     94.88
+    ],
+    [
+     80.08,
+     96.68
+    ],
+    [
+     80.08,
+     96.68
+    ],
+    [
+     80.08,
+     96.69
+    ],
+    [
+     80.08,
+     96.69
+    ],
+    [
+     80.08,
+     96.7
+    ],
+    [
+     80.08,
+     96.7
+    ],
+    [
+     80.08,
+     96.71
+    ],
+    [
+     80.08,
+     96.71
+    ],
+    [
+     80.08,
+     96.72
+    ],
+    [
+     80.08,
+     96.72
+    ],
+    [
+     80.07,
+     96.73
+    ],
+    [
+     80.07,
+     96.73
+    ],
+    [
+     80.07,
+     96.73
+    ],
+    [
+     80.06,
+     96.74
+    ],
+    [
+     80.06,
+     96.74
+    ],
+    [
+     80.06,
+     96.74
+    ],
+    [
+     80.05,
+     96.75
+    ],
+    [
+     76.39,
+     98.48
+    ],
+    [
+     76.39,
+     98.48
+    ],
+    [
+     70.83,
+     100.23
+    ]
+   ],
+   "area_m2": 168.0,
+   "outline_status": "USER_ANNOTATED(09 红线左右路相通)",
+   "evidence": "用户09:坡道这边的路和加油站那边主路黏在一起,一个左一个右;航拍04 坡底连续路面",
+   "p2_source": null,
+   "model3d": {
+    "roof_type": "ground",
+    "eave_h_m": 0,
+    "rise_m": 0,
+    "ridge_dir": "EW",
+    "z0_m": 0,
+    "height_status": "N/A(地面)",
+    "height_basis": null
+   }
+  }
+ ],
+ "changelog": [
+  {
+   "version": "v5_长廊棚",
+   "date": "2026-10-11",
+   "changes": [
+    "删除 A01a「弧形楼北段外排(西)」(10 m 楼体) → 并入长廊棚 CORR",
+    "A01b 北端 N204–212.5 划归长廊棚北端转折段",
+    "删除 A02「弧形楼弧段(环绕坡道西侧)」(10 m 楼体) → 并入长廊棚 CORR",
+    "A03 扣除长廊棚重叠部分 (110.0→75.0 ㎡)",
+    "A04 扣除长廊棚重叠部分 (54.0→40.9 ㎡)",
+    "RD_w3 扣除长廊棚重叠部分 (477.0→272.3 ㎡)",
+    "PK_nw 扣除长廊棚重叠部分 (2016.0→2016.0 ㎡)",
+    "YD_ramp 扣除长廊棚重叠部分 (280.0→273.0 ㎡)",
+    "A06 扣除长廊棚重叠部分 (48.0→26.3 ㎡)",
+    "RD_arcW 扣除长廊棚重叠部分 (192.0→192.0 ㎡)",
+    "GR02 扣除长廊棚重叠部分 (379.6→339.0 ㎡)",
+    "GR10 扣除长廊棚重叠部分 (138.0→130.9 ㎡)",
+    "RD_rf 扣除 RD_rf_c 雨棚带(路边摊位带,400.8→218.3 ㎡)",
+    "新增 CORR 黄色长廊棚(557 ㎡,中心线长 103.1 m,宽 5.4 m)、CORR_T 北端转折段、RD_corrW、YD_corrE"
+   ]
+  },
+  {
+   "version": "v5.1",
+   "date": "2026-10-11 15:xx",
+   "changes": [
+    "RD_w1 让出用户红线摊位带 5.9 ㎡",
+    "RD_rf 让出用户红线摊位带 1.4 ㎡",
+    "RD_rf_2 让出用户红线摊位带 40.7 ㎡",
+    "新增 STRIP_LK、STRIP_GAS(用户 08 红线摊位带)"
+   ]
+  },
+  {
+   "version": "v6_弯道",
+   "date": "2026-10-12 02:xx",
+   "changes": [
+    "RAMP_IN 楼→停车场地(航拍04)",
+    "RAMP_IN2 楼→停车场地(航拍04)",
+    "删除 W28(车辆误检为楼)",
+    "OR01 收缩 E90–97 N99–108,让出坡底道路",
+    "删除破碎 RD_rf/RD_rf_2/RD_rf_2_p2,新增 RD_join 168㎡(左右路汇合)",
+    "RAMP_OPEN 重描:接汇合带、避开橙顶区",
+    "RAMP_U/OPEN 标记 no_rail(拆除护栏)"
+   ],
+   "basis": "用户09标注+航拍04+卫星+拓扑草图"
+  }
+ ],
+ "user_redlines_08": {
+  "LK_left": [
+   [
+    38.0,
+    87.6
+   ],
+   [
+    42.0,
+    87.9
+   ],
+   [
+    46.0,
+    88.4
+   ],
+   [
+    48.0,
+    88.9
+   ],
+   [
+    52.0,
+    90.2
+   ],
+   [
+    55.0,
+    92.3
+   ],
+   [
+    57.0,
+    94.6
+   ],
+   [
+    59.0,
+    96.7
+   ],
+   [
+    62.3,
+    98.6
+   ]
+  ],
+  "LK_right": [
+   [
+    62.3,
+    98.6
+   ],
+   [
+    63,
+    99.65
+   ],
+   [
+    70,
+    99.4
+   ],
+   [
+    76,
+    97.5
+   ],
+   [
+    79.6,
+    95.8
+   ]
+  ],
+  "GAS_west_edge": [
+   [
+    41.6,
+    63.7
+   ],
+   [
+    41.5,
+    55
+   ],
+   [
+    41.6,
+    50
+   ],
+   [
+    42.1,
+    46
+   ],
+   [
+    42.2,
+    42
+   ],
+   [
+    42.4,
+    38
+   ],
+   [
+    42.5,
+    34
+   ],
+   [
+    42.8,
+    30
+   ],
+   [
+    43.2,
+    26
+   ],
+   [
+    44.0,
+    22
+   ],
+   [
+    44.3,
+    18
+   ],
+   [
+    44.7,
+    14
+   ],
+   [
+    45.2,
+    10.8
+   ]
+  ],
+  "hook": "E47–51 N91–96 向北小弯钩"
+ }
+}
