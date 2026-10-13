@@ -1,4 +1,4 @@
 Chengnan market ops — progressive 3D
-v=20261014b
+v=20261014c
 WeChat/mobile: meshopt; Desktop: Draco
-Screen-fit camera, platter, soft void
+Log depth, polygonOffset, hide underside, WeChat AA
