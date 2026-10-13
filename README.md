@@ -1,6 +1,6 @@
 # 城南市场 · 摊位运营台（微信渐进 3D）
 
-不砍三维、不砍摊位功能。首屏先出台账/搜索/平面图，后台加载 Draco 压缩 GLB。
+不砍三维、不砍摊位功能。首屏先出台账/搜索/平面图，后台加载压缩 GLB（微信/手机 meshopt，桌面 Draco，失败回退 Draco）。
 
 ## 本地开发
 
@@ -25,7 +25,8 @@ npm run preview
 | 首屏 JS+CSS | ~60KB | 可交互 |
 | stalls.json | 444KB（gzip ~24KB） | 台账 |
 | three chunk | ~595KB（gzip ~152KB） | 延后 |
-| mobile_draco.glb | 1.5MB | 微信默认 |
+| mobile_meshopt.glb | 2.0MB | 微信/手机默认 |
+| mobile_draco.glb | 1.5MB | 解码回退 |
 | desktop_draco.glb | 1.7MB | 桌面默认 |
 
 旧单文件 monolith ≈ 9.7MB 一次吞完。

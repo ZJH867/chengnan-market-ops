@@ -1,16 +1,4 @@
-城南市场运营台 · 微信渐进 3D 部署包
-================================
-入口：index.html（同 URL 即可，内部渐进加载）
-模型：models/scene_mobile_draco.glb（微信）/ scene_desktop_draco.glb（桌面）
-回滚：legacy-monolith.html（旧 9.7MB 单文件）
-
-推送到 GitHub Pages（仓库 ZJH867/chengnan-market-ops）：
-  cd /workspace/chengnan-market-ops-wechat
-  # 若本机已 gh auth login：
-  ./scripts/push-pages.sh
-
-或手动：
-  1. 把 site/ 内全部文件覆盖到仓库根目录（保留 .github/workflows）
-  2. git add -A && git commit -m "微信渐进3D：拆包+Draco+先平面后三维"
-  3. git push origin main
-  4. 打开 https://zjh867.github.io/chengnan-market-ops/
+Chengnan market ops — progressive 3D
+v=20261013c
+WeChat/mobile: meshopt; Desktop: Draco
+Decode heartbeat + yield + deferred labels; no modulepreload for three
