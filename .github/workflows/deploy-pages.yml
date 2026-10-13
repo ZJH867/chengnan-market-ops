@@ -23,13 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Configure Pages
-        id: configure
         uses: actions/configure-pages@v5
-        with:
-          # Creating the site needs administration:write, which neither the app
-          # token nor GITHUB_TOKEN has. Continue so the deployment API can run.
-          enablement: true
-        continue-on-error: true
 
       - name: Assemble site
         run: |
