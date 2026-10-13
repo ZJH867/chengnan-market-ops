@@ -24,6 +24,10 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Pages is not enabled yet, and the app token cannot create the site
+          # (needs administration:write). The workflow token tries instead.
+          enablement: true
 
       - name: Assemble site
         run: |
