@@ -1,4 +1,4 @@
 Chengnan market ops — progressive 3D
-v=20261013c
+v=20261014b
 WeChat/mobile: meshopt; Desktop: Draco
-Decode heartbeat + yield + deferred labels; no modulepreload for three
+Screen-fit camera, platter, soft void

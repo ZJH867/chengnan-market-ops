@@ -1,32 +1,5 @@
-# 城南市场 · 摊位运营台（微信渐进 3D）
+# 城南市场摊位运营台
 
-不砍三维、不砍摊位功能。首屏先出台账/搜索/平面图，后台加载压缩 GLB（微信/手机 meshopt，桌面 Draco，失败回退 Draco）。
+渐进三维：微信用 meshopt（解码更快），桌面用 Draco。先平面可搜可改，三维后台就绪。
 
-## 本地开发
-
-```bash
-npm i
-npm run dev    # http://127.0.0.1:4178/
-npm run build
-npm run preview
-```
-
-## 微信验证
-
-1. 部署到 HTTPS（GitHub Pages）。
-2. 微信内打开链接。
-3. 首屏应立刻能搜 `D1-27` / `A2-55` 并打开档案改租金。
-4. 底部出现「三维加载」进度，完成后可揭顶（外观 / 揭顶·一层 / 二层）。
-
-## 体积（约）
-
-| 资源 | raw | 说明 |
-|---|---:|---|
-| 首屏 JS+CSS | ~60KB | 可交互 |
-| stalls.json | 444KB（gzip ~24KB） | 台账 |
-| three chunk | ~595KB（gzip ~152KB） | 延后 |
-| mobile_meshopt.glb | 2.0MB | 微信/手机默认 |
-| mobile_draco.glb | 1.5MB | 解码回退 |
-| desktop_draco.glb | 1.7MB | 桌面默认 |
-
-旧单文件 monolith ≈ 9.7MB 一次吞完。
+线上：https://zjh867.github.io/chengnan-market-ops/
