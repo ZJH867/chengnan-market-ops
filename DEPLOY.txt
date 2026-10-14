@@ -1,4 +1,4 @@
 Chengnan market ops — progressive 3D
-v=20261014d
-Flicker polish + mobile swipe/UI
+v=20261014e
+Premium UI + stall flicker harden
 WeChat/mobile: meshopt; Desktop: Draco

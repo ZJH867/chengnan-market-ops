@@ -1,40 +1,44 @@
 name: Deploy GitHub Pages
-
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        continue-on-error: true
+        with:
+          enablement: true
       - name: Assemble site
         run: |
-          mkdir -p site
-          cp -a index.html .nojekyll assets data models vendor legacy-monolith.html DEPLOY.txt site/
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+          mkdir -p _site
+          # Prefer prebuilt site/ if present; else repo root static files
+          if [ -d site ] && [ -f site/index.html ]; then
+            cp -a site/. _site/
+          else
+            # repo root is already the static site
+            shopt -s dotglob
+            for f in *; do
+              case "$f" in
+                .git|.github|node_modules|src|scripts|public|_site|site) ;;
+                *) cp -a "$f" _site/ ;;
+              esac
+            done
+          fi
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
-
+          path: _site
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -42,6 +46,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
