@@ -1,4 +1,1 @@
-Chengnan market ops — progressive 3D
-v=20261014e
-Premium UI + stall flicker harden
-WeChat/mobile: meshopt; Desktop: Draco
+corridor flicker harden v=20261014f 2026-10-14 09:41 CST
